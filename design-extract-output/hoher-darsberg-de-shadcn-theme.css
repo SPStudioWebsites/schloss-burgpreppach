@@ -1,0 +1,13 @@
+/* shadcn/ui Theme — extracted from https://www.hoher-darsberg.de/home */
+/* Paste into your globals.css */
+
+@layer base {
+  :root {
+    --background: 0 0% 97%;
+    --foreground: 0 0% 0%;
+    --muted: 228 2% 55%;
+    --muted-foreground: 0 0% 35%;
+    --border: 0 0% 20%;
+    --radius: 8px;
+  }
+}

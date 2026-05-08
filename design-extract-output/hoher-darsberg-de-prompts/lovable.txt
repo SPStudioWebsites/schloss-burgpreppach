@@ -1,0 +1,12 @@
+Clone the design language of this blog-post page and build a fresh equivalent.
+Visual feel: flat. Tone: friendly · Headings: Title Case · CTA verbs: [object Object], [object Object], [object Object], [object Object], [object Object], [object Object]
+Primary palette: #5a5a5a, #000000, #f7f7f7, #e7e7e7, #333333.
+Typography: [object Object], [object Object], [object Object], [object Object].
+Corner radius vocabulary: 4, 8, 18, 26, 100, 300.
+Shadow vocabulary: rgb(0, 0, 0) 0px 0px 0px 0px | rgba(0, 0, 0, 0.15) 0px 1px 2px 0px | rgba(0, 0, 0, 0.2) 0px 0px 10px 0px.
+Page structure:
+- hero — heading: "Eure Liebe,
+unser Herzblut"
+- hero — heading: "Der Hohe Darsberg macht Euch neugierig?
+Kommt doch einfach mal vorbei! "
+- footer

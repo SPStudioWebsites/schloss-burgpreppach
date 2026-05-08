@@ -1,0 +1,1964 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Schloss Burgpreppach – Exklusive Hochzeitslocation im Herzen Unterfrankens. Heiraten in einem historischen Schloss der Familie Fuchs von Bimbach.">
+  <title>Schloss Burgpreppach — Hochzeitslocation in Unterfranken</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <style>
+    /* ─── Reset & Base ───────────────────────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --ivory:      #f4f0ea;
+      --ivory-alt:  #edeae3;
+      --ivory-deep: #e2ddd4;
+      --dark:       #1a1714;
+      --dark-mid:   #2c2820;
+      --gray:       #5a5a5a;
+      --gray-light: #8a8780;
+      --border:     #d8d3c8;
+      --gold:       #b8975c;
+      --gold-light: #d4b87a;
+      --white:      #ffffff;
+
+      --font-display: 'Cormorant Garamond', Georgia, serif;
+      --font-body:    'Montserrat', sans-serif;
+
+      --section-pad:  120px;
+      --section-sm:   80px;
+      --max-w:        1200px;
+      --text-w:       680px;
+
+      --ease: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    }
+
+    html { font-size: 16px; }
+
+    body {
+      font-family: var(--font-body);
+      background: var(--ivory);
+      color: var(--dark);
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    a { text-decoration: none; color: inherit; }
+
+    /* ─── Typography helpers ─────────────────────────────────────────── */
+    .label {
+      font-family: var(--font-body);
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--gold);
+    }
+
+    .display-xl {
+      font-family: var(--font-display);
+      font-size: clamp(52px, 8vw, 96px);
+      font-weight: 300;
+      line-height: 0.95;
+      letter-spacing: -0.02em;
+    }
+
+    .display-lg {
+      font-family: var(--font-display);
+      font-size: clamp(38px, 5.5vw, 64px);
+      font-weight: 300;
+      line-height: 1.05;
+      letter-spacing: -0.02em;
+    }
+
+    .display-md {
+      font-family: var(--font-display);
+      font-size: clamp(28px, 3.5vw, 44px);
+      font-weight: 300;
+      line-height: 1.15;
+      letter-spacing: -0.01em;
+    }
+
+    .body-lg {
+      font-family: var(--font-body);
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 1.85;
+      color: var(--gray);
+    }
+
+    .body-sm {
+      font-family: var(--font-body);
+      font-size: 13px;
+      font-weight: 400;
+      line-height: 1.7;
+      color: var(--gray-light);
+    }
+
+    /* ─── Layout helpers ─────────────────────────────────────────────── */
+    .container {
+      max-width: var(--max-w);
+      margin-inline: auto;
+      padding-inline: 40px;
+    }
+
+    .text-center { text-align: center; }
+    .text-col { max-width: var(--text-w); margin-inline: auto; }
+
+    .divider {
+      width: 48px;
+      height: 1px;
+      background: var(--gold);
+      margin: 24px auto;
+    }
+
+    .divider--left { margin-left: 0; }
+
+    /* ─── Buttons ─────────────────────────────────────────────────────── */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-family: var(--font-body);
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      padding: 16px 36px;
+      border: 1px solid currentColor;
+      cursor: pointer;
+      transition: background 0.3s var(--ease), color 0.3s var(--ease);
+    }
+
+    .btn-primary {
+      background: var(--white);
+      color: var(--dark);
+      border-color: var(--white);
+    }
+    .btn-primary:hover { background: transparent; color: var(--white); }
+
+    .btn-ghost {
+      background: transparent;
+      color: var(--white);
+      border-color: rgba(255,255,255,0.5);
+    }
+    .btn-ghost:hover { background: var(--white); color: var(--dark); }
+
+    .btn-dark {
+      background: var(--dark);
+      color: var(--white);
+      border-color: var(--dark);
+    }
+    .btn-dark:hover { background: transparent; color: var(--dark); }
+
+    .btn-outline {
+      background: transparent;
+      color: var(--dark);
+      border-color: var(--dark);
+    }
+    .btn-outline:hover { background: var(--dark); color: var(--white); }
+
+    /* ─── Navigation ─────────────────────────────────────────────────── */
+    .nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      padding: 28px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      transition: background 0.4s var(--ease), padding 0.4s var(--ease), box-shadow 0.4s var(--ease);
+    }
+
+    .nav.scrolled {
+      background: var(--white);
+      padding: 18px 40px;
+      box-shadow: 0 1px 0 var(--border);
+    }
+
+    .nav-logo {
+      font-family: var(--font-display);
+      font-size: 20px;
+      font-weight: 400;
+      letter-spacing: 0.05em;
+      color: var(--white);
+      transition: color 0.4s;
+    }
+    .nav.scrolled .nav-logo { color: var(--dark); }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 36px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.85);
+      transition: color 0.3s;
+    }
+    .nav.scrolled .nav-links a { color: var(--gray); }
+    .nav-links a:hover { color: var(--white); }
+    .nav.scrolled .nav-links a:hover { color: var(--dark); }
+
+    .nav-cta {
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      padding: 12px 28px;
+      border: 1px solid rgba(255,255,255,0.6);
+      color: var(--white);
+      transition: background 0.3s, color 0.3s, border-color 0.3s;
+    }
+    .nav-cta:hover { background: var(--white); color: var(--dark); border-color: var(--white); }
+    .nav.scrolled .nav-cta { border-color: var(--dark); color: var(--dark); }
+    .nav.scrolled .nav-cta:hover { background: var(--dark); color: var(--white); }
+
+    .nav-burger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      background: none;
+      border: none;
+      padding: 4px;
+    }
+    .nav-burger span {
+      display: block;
+      width: 24px;
+      height: 1px;
+      background: var(--white);
+      transition: background 0.4s;
+    }
+    .nav.scrolled .nav-burger span { background: var(--dark); }
+
+    /* ─── Hero ───────────────────────────────────────────────────────── */
+    .hero-wrapper {
+      height: 300vh;
+    }
+
+    .hero {
+      position: sticky;
+      top: 0;
+      height: 100svh;
+      min-height: 640px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      background-color: var(--dark-mid);
+    }
+
+    .hero-video {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        to bottom,
+        rgba(20,16,12,0.35) 0%,
+        rgba(20,16,12,0.55) 60%,
+        rgba(20,16,12,0.75) 100%
+      );
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      padding: 0 24px;
+      max-width: 900px;
+    }
+
+    .hero-label {
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--gold-light);
+      margin-bottom: 32px;
+    }
+
+    .hero-title {
+      font-family: var(--font-display);
+      font-size: clamp(56px, 9vw, 104px);
+      font-weight: 300;
+      line-height: 0.93;
+      letter-spacing: -0.02em;
+      color: var(--white);
+      margin-bottom: 28px;
+    }
+
+    .hero-title em {
+      font-style: italic;
+      font-weight: 300;
+    }
+
+    .hero-sub {
+      font-family: var(--font-display);
+      font-size: clamp(17px, 2vw, 22px);
+      font-weight: 300;
+      font-style: italic;
+      color: rgba(255,255,255,0.75);
+      margin-bottom: 52px;
+      line-height: 1.6;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .hero-scroll {
+      position: absolute;
+      bottom: 40px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      color: rgba(255,255,255,0.5);
+      font-size: 10px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      cursor: pointer;
+    }
+
+    .hero-scroll-line {
+      width: 1px;
+      height: 48px;
+      background: rgba(255,255,255,0.3);
+      animation: scrollPulse 2s ease-in-out infinite;
+    }
+
+    @keyframes scrollPulse {
+      0%, 100% { opacity: 0.3; transform: scaleY(1); }
+      50% { opacity: 0.8; transform: scaleY(0.6); }
+    }
+
+    /* ─── Hero Acts (Storytelling) ───────────────────────────────────── */
+    .hero-act {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 0 40px;
+      opacity: 0;
+      pointer-events: none;
+      z-index: 2;
+    }
+
+    /* Akt 1 startet sichtbar */
+    #heroContent { opacity: 1; pointer-events: auto; }
+
+    /* Akt 2 */
+    .hero-act2-center {
+      margin-bottom: 60px;
+    }
+
+    .hero-act2-headline {
+      font-family: var(--font-display);
+      font-size: clamp(44px, 7vw, 88px);
+      font-weight: 300;
+      line-height: 1.0;
+      letter-spacing: -0.02em;
+      color: var(--white);
+      margin-bottom: 24px;
+    }
+
+    .hero-act2-headline em {
+      font-style: italic;
+      font-weight: 300;
+    }
+
+    .hero-act2-sub {
+      font-family: var(--font-display);
+      font-size: clamp(16px, 2vw, 20px);
+      font-weight: 300;
+      font-style: italic;
+      color: rgba(255,255,255,0.65);
+      line-height: 1.6;
+    }
+
+    .hero-act2-stats {
+      display: flex;
+      align-items: center;
+      gap: 0;
+      border-top: 1px solid rgba(255,255,255,0.15);
+      border-bottom: 1px solid rgba(255,255,255,0.15);
+      padding: 0;
+    }
+
+    .hero-stat {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+      padding: 28px 48px;
+    }
+
+    .hero-stat-num {
+      font-family: var(--font-display);
+      font-size: clamp(32px, 4vw, 52px);
+      font-weight: 300;
+      color: var(--white);
+      line-height: 1;
+      letter-spacing: -0.02em;
+    }
+
+    .hero-stat-num sup {
+      font-size: 0.45em;
+      vertical-align: super;
+    }
+
+    .hero-stat-label {
+      font-family: var(--font-body);
+      font-size: 10px;
+      font-weight: 500;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--gold-light);
+    }
+
+    .hero-stat-divider {
+      width: 1px;
+      height: 48px;
+      background: rgba(255,255,255,0.15);
+      flex-shrink: 0;
+    }
+
+    /* Akt 3 */
+    .hero-act3-headline {
+      font-family: var(--font-display);
+      font-size: clamp(44px, 7vw, 88px);
+      font-weight: 300;
+      line-height: 1.05;
+      letter-spacing: -0.02em;
+      color: var(--white);
+      margin-bottom: 24px;
+    }
+
+    .hero-act3-headline em {
+      font-style: italic;
+      font-weight: 300;
+    }
+
+    @media (max-width: 768px) {
+      .hero-stat { padding: 20px 24px; }
+      .hero-act2-stats { flex-wrap: wrap; justify-content: center; }
+      .hero-stat-divider { display: none; }
+    }
+
+    /* ─── Intro ──────────────────────────────────────────────────────── */
+    .intro {
+      padding: var(--section-pad) 40px;
+      background: var(--white);
+      text-align: center;
+    }
+
+    .intro-quote {
+      font-family: var(--font-display);
+      font-size: clamp(26px, 4vw, 44px);
+      font-weight: 300;
+      font-style: italic;
+      line-height: 1.4;
+      color: var(--dark);
+      max-width: 780px;
+      margin: 0 auto 24px;
+    }
+
+    .intro-text {
+      max-width: 560px;
+      margin: 0 auto;
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 1.9;
+      color: var(--gray);
+    }
+
+    .intro-stats {
+      display: flex;
+      justify-content: center;
+      gap: 0;
+      margin-top: 72px;
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .stat {
+      flex: 1;
+      max-width: 220px;
+      padding: 40px 20px;
+      text-align: center;
+      border-right: 1px solid var(--border);
+    }
+    .stat:last-child { border-right: none; }
+
+    .stat-num {
+      font-family: var(--font-display);
+      font-size: 48px;
+      font-weight: 300;
+      letter-spacing: -0.02em;
+      color: var(--dark);
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+
+    .stat-label {
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--gray-light);
+    }
+
+    /* ─── Das Schloss ────────────────────────────────────────────────── */
+    .schloss {
+      padding: var(--section-pad) 0;
+      background: var(--ivory);
+    }
+
+    .schloss-inner {
+      max-width: var(--max-w);
+      margin-inline: auto;
+      padding-inline: 40px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: center;
+    }
+
+    .schloss-images {
+      display: grid;
+      grid-template-rows: 420px 240px;
+      gap: 16px;
+    }
+
+    .schloss-img {
+      overflow: hidden;
+      background-color: var(--ivory-deep);
+    }
+
+    .schloss-img img {
+      transition: transform 0.7s var(--ease);
+    }
+    .schloss-img:hover img { transform: scale(1.04); }
+
+    .schloss-img-bottom {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    .schloss-text {}
+
+    .schloss-text .label { margin-bottom: 20px; }
+
+    .schloss-text h2 {
+      font-family: var(--font-display);
+      font-size: clamp(36px, 4.5vw, 56px);
+      font-weight: 300;
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+      margin-bottom: 32px;
+    }
+
+    .schloss-text p {
+      font-size: 15px;
+      font-weight: 300;
+      line-height: 1.85;
+      color: var(--gray);
+      margin-bottom: 20px;
+    }
+
+    .schloss-features {
+      margin-top: 48px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px 40px;
+    }
+
+    .schloss-feature {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .schloss-feature-title {
+      font-family: var(--font-body);
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--dark);
+    }
+
+    .schloss-feature-desc {
+      font-size: 13px;
+      font-weight: 300;
+      line-height: 1.6;
+      color: var(--gray);
+    }
+
+    /* ─── Highlights ─────────────────────────────────────────────────── */
+    .highlights {
+      padding: var(--section-pad) 40px;
+      background: var(--white);
+    }
+
+    .highlights-header {
+      text-align: center;
+      margin-bottom: 80px;
+    }
+
+    .highlights-grid {
+      max-width: var(--max-w);
+      margin-inline: auto;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0;
+      border: 1px solid var(--border);
+    }
+
+    .highlight-item {
+      padding: 56px 40px;
+      border-right: 1px solid var(--border);
+      transition: background 0.3s;
+    }
+    .highlight-item:last-child { border-right: none; }
+    .highlight-item:hover { background: var(--ivory); }
+
+    .highlight-icon {
+      width: 40px;
+      height: 40px;
+      margin-bottom: 28px;
+      color: var(--gold);
+    }
+
+    .highlight-title {
+      font-family: var(--font-display);
+      font-size: 22px;
+      font-weight: 400;
+      letter-spacing: -0.01em;
+      margin-bottom: 14px;
+      color: var(--dark);
+    }
+
+    .highlight-desc {
+      font-size: 13px;
+      font-weight: 300;
+      line-height: 1.75;
+      color: var(--gray);
+    }
+
+    /* ─── Gallery ────────────────────────────────────────────────────── */
+    .gallery {
+      padding: var(--section-pad) 40px;
+      background: var(--ivory);
+    }
+
+    .gallery-header {
+      text-align: center;
+      margin-bottom: 64px;
+    }
+
+    .gallery-grid {
+      max-width: var(--max-w);
+      margin-inline: auto;
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      grid-template-rows: 360px 280px;
+      gap: 12px;
+    }
+
+    .gallery-item {
+      overflow: hidden;
+      background-color: var(--ivory-deep);
+      cursor: pointer;
+    }
+
+    .gallery-item img {
+      transition: transform 0.6s var(--ease);
+    }
+    .gallery-item:hover img { transform: scale(1.06); }
+
+    .gallery-item--lg { grid-column: span 5; }
+    .gallery-item--md { grid-column: span 4; }
+    .gallery-item--sm { grid-column: span 3; }
+    .gallery-item--xl { grid-column: span 7; }
+    .gallery-item--xs { grid-column: span 3; }
+    .gallery-item--half { grid-column: span 6; }
+
+    .gallery-cta {
+      text-align: center;
+      margin-top: 52px;
+    }
+
+    /* ─── Leistungen ─────────────────────────────────────────────────── */
+    .leistungen {
+      padding: var(--section-pad) 40px;
+      background: var(--dark);
+      color: var(--white);
+    }
+
+    .leistungen-inner {
+      max-width: var(--max-w);
+      margin-inline: auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: start;
+    }
+
+    .leistungen-left .label { color: var(--gold-light); }
+
+    .leistungen-left h2 {
+      font-family: var(--font-display);
+      font-size: clamp(34px, 4vw, 52px);
+      font-weight: 300;
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+      margin-top: 20px;
+      margin-bottom: 28px;
+    }
+
+    .leistungen-left p {
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 1.9;
+      color: rgba(255,255,255,0.6);
+      margin-bottom: 48px;
+    }
+
+    .leistungen-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .leistungen-list li {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      font-size: 13px;
+      font-weight: 300;
+      letter-spacing: 0.04em;
+      color: rgba(255,255,255,0.75);
+      padding-bottom: 16px;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .leistungen-list li:last-child { border-bottom: none; }
+
+    .leistungen-list li::before {
+      content: '';
+      display: block;
+      flex-shrink: 0;
+      width: 20px;
+      height: 1px;
+      background: var(--gold);
+    }
+
+    .leistungen-img {
+      position: relative;
+      height: 600px;
+      overflow: hidden;
+      background-color: var(--dark-mid);
+    }
+
+    .leistungen-img img {
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .leistungen-img-label {
+      position: absolute;
+      bottom: 32px;
+      left: 32px;
+      right: 32px;
+      background: rgba(26,23,20,0.85);
+      padding: 20px 24px;
+      backdrop-filter: blur(4px);
+    }
+
+    .leistungen-img-label p {
+      font-family: var(--font-display);
+      font-style: italic;
+      font-size: 17px;
+      color: rgba(255,255,255,0.9);
+      line-height: 1.5;
+    }
+
+    /* ─── Testimonials ───────────────────────────────────────────────── */
+    .testimonials {
+      padding: var(--section-pad) 40px;
+      background: var(--ivory-alt);
+    }
+
+    .testimonials-header {
+      text-align: center;
+      margin-bottom: 72px;
+    }
+
+    .testimonials-grid {
+      max-width: var(--max-w);
+      margin-inline: auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    .testimonial {
+      background: var(--white);
+      padding: 48px 40px;
+      position: relative;
+    }
+
+    .testimonial-stars {
+      display: flex;
+      gap: 4px;
+      margin-bottom: 24px;
+    }
+
+    .star {
+      width: 14px;
+      height: 14px;
+      color: var(--gold);
+    }
+
+    .testimonial-quote {
+      font-family: var(--font-display);
+      font-style: italic;
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 1.6;
+      color: var(--dark);
+      margin-bottom: 32px;
+    }
+
+    .testimonial-author {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .testimonial-name {
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--dark);
+    }
+
+    .testimonial-date {
+      font-size: 12px;
+      font-weight: 300;
+      color: var(--gray-light);
+    }
+
+    .testimonial-mark {
+      position: absolute;
+      top: 36px;
+      right: 40px;
+      font-family: var(--font-display);
+      font-size: 80px;
+      line-height: 1;
+      color: var(--ivory-deep);
+      font-weight: 300;
+      user-select: none;
+    }
+
+    /* ─── Anfrage ─────────────────────────────────────────────────────── */
+    .anfrage {
+      padding: var(--section-pad) 40px;
+      background: var(--white);
+    }
+
+    .anfrage-inner {
+      max-width: var(--max-w);
+      margin-inline: auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: start;
+    }
+
+    .anfrage-info {}
+    .anfrage-info .label { margin-bottom: 20px; }
+
+    .anfrage-info h2 {
+      font-family: var(--font-display);
+      font-size: clamp(32px, 3.5vw, 48px);
+      font-weight: 300;
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+      margin-bottom: 24px;
+    }
+
+    .anfrage-info p {
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 1.9;
+      color: var(--gray);
+      margin-bottom: 48px;
+    }
+
+    .contact-items {
+      display: flex;
+      flex-direction: column;
+      gap: 28px;
+    }
+
+    .contact-item {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      padding-bottom: 28px;
+      border-bottom: 1px solid var(--border);
+    }
+    .contact-item:last-child { border-bottom: none; padding-bottom: 0; }
+
+    .contact-item-label {
+      font-size: 10px;
+      font-weight: 500;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--gold);
+    }
+
+    .contact-item-value {
+      font-family: var(--font-display);
+      font-size: 20px;
+      font-weight: 300;
+      color: var(--dark);
+    }
+
+    .contact-item-sub {
+      font-size: 12px;
+      font-weight: 300;
+      color: var(--gray-light);
+    }
+
+    /* ─── Form ───────────────────────────────────────────────────────── */
+    .form { display: flex; flex-direction: column; gap: 0; }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0 32px;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      padding-bottom: 32px;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 32px;
+    }
+
+    .form-label {
+      font-size: 10px;
+      font-weight: 500;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--gray-light);
+    }
+
+    .form-input,
+    .form-select,
+    .form-textarea {
+      font-family: var(--font-body);
+      font-size: 15px;
+      font-weight: 300;
+      color: var(--dark);
+      background: transparent;
+      border: none;
+      outline: none;
+      padding: 0;
+      width: 100%;
+      resize: none;
+      appearance: none;
+    }
+
+    .form-input::placeholder,
+    .form-textarea::placeholder { color: var(--gray-light); }
+
+    .form-select {
+      cursor: pointer;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%235a5a5a' stroke-width='1.5' fill='none'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 4px center;
+      padding-right: 20px;
+    }
+
+    .form-textarea { min-height: 80px; }
+
+    .form-submit { margin-top: 8px; align-self: flex-start; }
+
+    /* ─── Footer ─────────────────────────────────────────────────────── */
+    .footer {
+      background: var(--dark);
+      color: var(--white);
+      padding: 80px 40px 48px;
+    }
+
+    .footer-inner {
+      max-width: var(--max-w);
+      margin-inline: auto;
+    }
+
+    .footer-top {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 60px;
+      padding-bottom: 60px;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+      margin-bottom: 40px;
+    }
+
+    .footer-brand-name {
+      font-family: var(--font-display);
+      font-size: 22px;
+      font-weight: 400;
+      letter-spacing: 0.04em;
+      margin-bottom: 16px;
+    }
+
+    .footer-brand-desc {
+      font-size: 13px;
+      font-weight: 300;
+      line-height: 1.75;
+      color: rgba(255,255,255,0.45);
+      max-width: 280px;
+    }
+
+    .footer-col-title {
+      font-size: 10px;
+      font-weight: 500;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 20px;
+    }
+
+    .footer-links {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .footer-links a {
+      font-size: 13px;
+      font-weight: 300;
+      color: rgba(255,255,255,0.5);
+      transition: color 0.2s;
+    }
+    .footer-links a:hover { color: var(--white); }
+
+    .footer-bottom {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .footer-copy {
+      font-size: 12px;
+      font-weight: 300;
+      color: rgba(255,255,255,0.3);
+    }
+
+    .footer-legal {
+      display: flex;
+      gap: 28px;
+      list-style: none;
+    }
+
+    .footer-legal a {
+      font-size: 12px;
+      font-weight: 300;
+      color: rgba(255,255,255,0.3);
+      transition: color 0.2s;
+    }
+    .footer-legal a:hover { color: rgba(255,255,255,0.7); }
+
+    /* ─── Scroll reveal ──────────────────────────────────────────────── */
+    .reveal {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity 0.7s var(--ease), transform 0.7s var(--ease);
+    }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+    .reveal-delay-1 { transition-delay: 0.1s; }
+    .reveal-delay-2 { transition-delay: 0.2s; }
+    .reveal-delay-3 { transition-delay: 0.3s; }
+
+    /* ─── Mobile nav overlay ─────────────────────────────────────────── */
+    .nav-mobile {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: var(--dark);
+      z-index: 99;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 40px;
+    }
+    .nav-mobile.open { display: flex; }
+    .nav-mobile a {
+      font-family: var(--font-display);
+      font-size: 32px;
+      font-weight: 300;
+      color: var(--white);
+      letter-spacing: 0.02em;
+    }
+    .nav-mobile-close {
+      position: absolute;
+      top: 28px;
+      right: 40px;
+      background: none;
+      border: none;
+      color: var(--white);
+      font-size: 32px;
+      cursor: pointer;
+      font-weight: 300;
+    }
+
+    /* ─── Responsive ─────────────────────────────────────────────────── */
+    @media (max-width: 1024px) {
+      :root { --section-pad: 80px; }
+
+      .highlights-grid { grid-template-columns: repeat(2, 1fr); }
+      .highlight-item { border-bottom: 1px solid var(--border); }
+      .highlight-item:nth-child(2) { border-right: none; }
+      .highlight-item:nth-child(3), .highlight-item:nth-child(4) { border-bottom: none; }
+      .highlight-item:nth-child(3) { border-right: 1px solid var(--border); }
+
+      .schloss-inner { grid-template-columns: 1fr; gap: 48px; }
+      .schloss-images { grid-template-rows: 340px 200px; order: -1; }
+
+      .leistungen-inner { grid-template-columns: 1fr; }
+      .leistungen-img { height: 400px; order: -1; }
+
+      .testimonials-grid { grid-template-columns: 1fr 1fr; }
+      .testimonials-grid .testimonial:nth-child(3) { grid-column: span 2; }
+
+      .anfrage-inner { grid-template-columns: 1fr; }
+
+      .footer-top { grid-template-columns: 1fr 1fr; gap: 48px; }
+    }
+
+    @media (max-width: 768px) {
+      :root { --section-pad: 64px; }
+
+      .nav-links, .nav-cta { display: none; }
+      .nav-burger { display: flex; }
+
+      .container { padding-inline: 24px; }
+      .gallery, .highlights, .intro, .anfrage, .testimonials, .leistungen, .schloss { padding-left: 24px; padding-right: 24px; }
+      .footer { padding-left: 24px; padding-right: 24px; }
+
+      .gallery-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+      }
+      .gallery-item--lg, .gallery-item--md, .gallery-item--sm,
+      .gallery-item--xl, .gallery-item--xs, .gallery-item--half {
+        grid-column: span 1;
+        height: 200px;
+      }
+      .gallery-item:first-child { grid-column: span 2; height: 260px; }
+
+      .testimonials-grid { grid-template-columns: 1fr; }
+      .testimonials-grid .testimonial:nth-child(3) { grid-column: span 1; }
+
+      .form-row { grid-template-columns: 1fr; }
+
+      .footer-top { grid-template-columns: 1fr; gap: 36px; }
+      .footer-bottom { flex-direction: column; gap: 16px; text-align: center; }
+      .footer-legal { justify-content: center; }
+
+      .intro-stats { flex-direction: column; align-items: center; }
+      .stat { border-right: none; border-bottom: 1px solid var(--border); max-width: 100%; width: 100%; }
+      .stat:last-child { border-bottom: none; }
+
+      .schloss-features { grid-template-columns: 1fr; }
+      .schloss-img-bottom { grid-template-columns: 1fr 1fr; }
+
+      .hero-actions { flex-direction: column; align-items: center; }
+    }
+
+    @media (max-width: 480px) {
+      .nav { padding: 20px 24px; }
+      .nav.scrolled { padding: 16px 24px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ─── Nav ──────────────────────────────────────────────────────────── -->
+  <nav class="nav" id="nav">
+    <a href="#" class="nav-logo">Schloss Burgpreppach</a>
+
+    <ul class="nav-links">
+      <li><a href="#schloss">Das Schloss</a></li>
+      <li><a href="#galerie">Galerie</a></li>
+      <li><a href="#leistungen">Leistungen</a></li>
+      <li><a href="#testimonials">Stimmen</a></li>
+    </ul>
+
+    <a href="#anfrage" class="nav-cta">Anfrage stellen</a>
+
+    <button class="nav-burger" id="burger" aria-label="Menü öffnen">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Nav -->
+  <div class="nav-mobile" id="mobileNav">
+    <button class="nav-mobile-close" id="mobileClose">×</button>
+    <a href="#schloss" class="mobile-link">Das Schloss</a>
+    <a href="#galerie" class="mobile-link">Galerie</a>
+    <a href="#leistungen" class="mobile-link">Leistungen</a>
+    <a href="#testimonials" class="mobile-link">Stimmen</a>
+    <a href="#anfrage" class="mobile-link">Anfrage stellen</a>
+  </div>
+
+  <!-- ─── Hero ─────────────────────────────────────────────────────────── -->
+  <div class="hero-wrapper">
+  <section class="hero" id="hero">
+    <video id="heroVideo" class="hero-video"
+      src="./public/videos/Hero-keyinit1.mp4"
+      muted playsinline preload="auto"></video>
+    <div class="hero-overlay"></div>
+
+    <!-- Akt 1: Emotionaler Einstieg -->
+    <div class="hero-content hero-act" id="heroContent">
+      <p class="hero-label">Hochzeitslocation · Unterfranken</p>
+
+      <h1 class="hero-title">
+        Wo aus einem<br>
+        <em>Ja</em> ein<br>
+        Für immer wird
+      </h1>
+
+      <p class="hero-sub">
+        Heiraten im historischen Schloss Burgpreppach —<br>
+        exklusiv, unvergesslich, zeitlos schön.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#anfrage" class="btn btn-primary">Termin anfragen</a>
+        <a href="#galerie" class="btn btn-ghost">Galerie entdecken</a>
+      </div>
+    </div>
+
+    <!-- Akt 2: Wertversprechen -->
+    <div class="hero-act" id="heroAct2">
+      <div class="hero-act2-center">
+        <p class="hero-label" style="margin-bottom:20px;">Das Besondere</p>
+        <p class="hero-act2-headline">Nur für Sie.<br><em>Kein zweites Brautpaar.</em></p>
+        <p class="hero-act2-sub">
+          An Ihrem Hochzeitstag gehört Schloss Burgpreppach<br>
+          ausschließlich Ihnen und Ihren Gästen.
+        </p>
+      </div>
+      <div class="hero-act2-stats">
+        <div class="hero-stat">
+          <span class="hero-stat-num">750<sup>+</sup></span>
+          <span class="hero-stat-label">Jahre Geschichte</span>
+        </div>
+        <div class="hero-stat-divider"></div>
+        <div class="hero-stat">
+          <span class="hero-stat-num">150</span>
+          <span class="hero-stat-label">Gäste möglich</span>
+        </div>
+        <div class="hero-stat-divider"></div>
+        <div class="hero-stat">
+          <span class="hero-stat-num">5</span>
+          <span class="hero-stat-label">Schlossappartements</span>
+        </div>
+        <div class="hero-stat-divider"></div>
+        <div class="hero-stat">
+          <span class="hero-stat-num">100<sup>%</sup></span>
+          <span class="hero-stat-label">Exklusiv für Sie</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Akt 3: Conversion -->
+    <div class="hero-act" id="heroAct3">
+      <p class="hero-label" style="margin-bottom:28px;">Ihr nächster Schritt</p>
+      <p class="hero-act3-headline">
+        Lassen Sie uns<br><em>Ihren Tag gestalten.</em>
+      </p>
+      <p class="hero-act2-sub" style="margin-bottom:40px;">
+        Vereinbaren Sie jetzt einen unverbindlichen<br>
+        Besichtigungstermin — wir freuen uns auf Sie.
+      </p>
+      <a href="#anfrage" class="btn btn-primary">Jetzt Termin anfragen</a>
+    </div>
+
+    <div class="hero-scroll" onclick="lenis.scrollTo(document.getElementById('intro'), {duration:1.6})">
+      <div class="hero-scroll-line"></div>
+      <span>Entdecken</span>
+    </div>
+  </section>
+  </div><!-- /hero-wrapper -->
+
+  <!-- ─── Intro ─────────────────────────────────────────────────────────── -->
+  <section class="intro" id="intro">
+    <div class="reveal">
+      <p class="label">Schloss Burgpreppach</p>
+      <div class="divider"></div>
+    </div>
+
+    <blockquote class="intro-quote reveal reveal-delay-1">
+      „Ein Ort, der Geschichte atmet —<br>
+      und Ihre Geschichte schreibt."
+    </blockquote>
+
+    <p class="intro-text reveal reveal-delay-2">
+      Schloss Burgpreppach liegt im Herzen Unterfrankens und bietet einen einzigartigen
+      Rahmen für Ihre Hochzeit. Das historische Anwesen der Familie Fuchs von Bimbach
+      verbindet jahrhundertealte Eleganz mit modernem Komfort — exklusiv für Sie
+      und Ihre Gäste.
+    </p>
+
+    <div class="intro-stats reveal reveal-delay-2">
+      <div class="stat">
+        <div class="stat-num">750<sup style="font-size:0.4em;vertical-align:super;">+</sup></div>
+        <div class="stat-label">Jahre Geschichte</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">150</div>
+        <div class="stat-label">Gäste möglich</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">100%</div>
+        <div class="stat-label">Exklusiv für Sie</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">5</div>
+        <div class="stat-label">Schlossappartements</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Das Schloss ───────────────────────────────────────────────────── -->
+  <section class="schloss" id="schloss">
+    <div class="schloss-inner">
+      <div class="schloss-images reveal">
+        <div class="schloss-img">
+          <img src="./public/images/schloss-facade.jpg" alt="Schloss Burgpreppach Fassade">
+        </div>
+        <div class="schloss-img-bottom">
+          <div class="schloss-img">
+            <img src="./public/images/saal-innen.jpg" alt="Festsaal">
+          </div>
+          <div class="schloss-img">
+            <img src="./public/images/garten.jpg" alt="Schlossgarten">
+          </div>
+        </div>
+      </div>
+
+      <div class="schloss-text">
+        <p class="label reveal">Das Schloss</p>
+        <h2 class="reveal reveal-delay-1">
+          Jahrhunderte­alte<br>
+          Eleganz trifft<br>
+          Ihre Geschichte
+        </h2>
+
+        <p class="reveal reveal-delay-2">
+          Inmitten der sanften Hügel Unterfrankens thront Schloss Burgpreppach als eines der
+          schönsten historischen Anwesen der Region. Seit Generationen im Besitz der Familie
+          Fuchs von Bimbach, öffnet das Schloss seine Tore exklusiv für Paare, die einen
+          unvergesslichen Rahmen für ihren schönsten Tag suchen.
+        </p>
+
+        <p class="reveal reveal-delay-2">
+          Ob standesamtliche oder kirchliche Trauung, feierliches Dinner im historischen
+          Festsaal oder romantischer Sektempfang im Schlossgarten — jedes Detail wird
+          mit Sorgfalt und Leidenschaft für Sie gestaltet.
+        </p>
+
+        <div class="schloss-features reveal reveal-delay-3">
+          <div class="schloss-feature">
+            <span class="schloss-feature-title">Standesamt</span>
+            <span class="schloss-feature-desc">Trauung direkt im Schloss möglich</span>
+          </div>
+          <div class="schloss-feature">
+            <span class="schloss-feature-title">Übernachtung</span>
+            <span class="schloss-feature-desc">Schlossappartements für das Brautpaar</span>
+          </div>
+          <div class="schloss-feature">
+            <span class="schloss-feature-title">Schlossgarten</span>
+            <span class="schloss-feature-desc">Sektempfang & Outdoor-Zeremonien</span>
+          </div>
+          <div class="schloss-feature">
+            <span class="schloss-feature-title">Freie Wahl</span>
+            <span class="schloss-feature-desc">Eigener Caterer & DJ willkommen</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Highlights ────────────────────────────────────────────────────── -->
+  <section class="highlights" id="highlights">
+    <div class="highlights-header reveal">
+      <p class="label">Warum Burgpreppach</p>
+      <div class="divider"></div>
+      <h2 class="display-md" style="margin-top:8px;">Was Ihre Hochzeit<br>unvergesslich macht</h2>
+    </div>
+
+    <div class="highlights-grid reveal reveal-delay-1">
+      <div class="highlight-item">
+        <svg class="highlight-icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.2">
+          <rect x="6" y="6" width="28" height="28" rx="1"/>
+          <path d="M6 16h28M16 6v28"/>
+        </svg>
+        <h3 class="highlight-title">Exklusive Location</h3>
+        <p class="highlight-desc">Das Schloss gehört an Ihrem Hochzeitstag ausschließlich Ihnen und Ihren Gästen. Keine anderen Veranstaltungen, kein Trubel.</p>
+      </div>
+
+      <div class="highlight-item">
+        <svg class="highlight-icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.2">
+          <path d="M20 6C13.37 6 8 11.37 8 18c0 8 12 20 12 20s12-12 12-20c0-6.63-5.37-12-12-12z"/>
+          <circle cx="20" cy="18" r="4"/>
+        </svg>
+        <h3 class="highlight-title">Historisches Flair</h3>
+        <p class="highlight-desc">Über 750 Jahre Geschichte als einzigartiger Rahmen für Ihren schönsten Tag — authentisch, unvergesslich, einmalig.</p>
+      </div>
+
+      <div class="highlight-item">
+        <svg class="highlight-icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.2">
+          <path d="M8 32V14l12-8 12 8v18"/>
+          <rect x="15" y="22" width="10" height="10"/>
+        </svg>
+        <h3 class="highlight-title">Übernachtung</h3>
+        <p class="highlight-desc">Verbringen Sie Ihre Hochzeitsnacht in stilvollen Schlossappartements — erwachen Sie am nächsten Morgen als verheiratetes Paar.</p>
+      </div>
+
+      <div class="highlight-item">
+        <svg class="highlight-icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.2">
+          <circle cx="20" cy="20" r="14"/>
+          <path d="M14 20h12M20 14v12"/>
+        </svg>
+        <h3 class="highlight-title">Alles inklusive</h3>
+        <p class="highlight-desc">Volle Flexibilität bei Catering, Musik und Dekoration. Wir koordinieren — Sie feiern. Freie Wahl aller Dienstleister.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Galerie ───────────────────────────────────────────────────────── -->
+  <section class="gallery" id="galerie">
+    <div class="gallery-header reveal">
+      <p class="label">Impressionen</p>
+      <div class="divider"></div>
+      <h2 class="display-md" style="margin-top:8px;">Das Schloss<br>in Bildern</h2>
+    </div>
+
+    <div class="gallery-grid reveal reveal-delay-1">
+      <div class="gallery-item gallery-item--lg">
+        <img src="./public/images/galerie-1.jpg" alt="Hochzeitspaar vor dem Schloss">
+      </div>
+      <div class="gallery-item gallery-item--md">
+        <img src="./public/images/saal-innen.jpg" alt="Festsaal">
+      </div>
+      <div class="gallery-item gallery-item--sm">
+        <img src="./public/images/tisch-deko.jpg" alt="Tischdekoration">
+      </div>
+      <div class="gallery-item gallery-item--xl">
+        <img src="./public/images/galerie-2.jpg" alt="Sektempfang auf der Terrasse">
+      </div>
+      <div class="gallery-item gallery-item--xs">
+        <img src="./public/images/galerie-3.jpg" alt="Trauzeremonie">
+      </div>
+      <div class="gallery-item gallery-item--half" style="grid-row: 2;">
+        <!-- spans via grid auto -->
+      </div>
+    </div>
+
+    <div class="gallery-cta reveal">
+      <a href="#anfrage" class="btn btn-outline">Besichtigungstermin anfragen</a>
+    </div>
+  </section>
+
+  <!-- ─── Leistungen ────────────────────────────────────────────────────── -->
+  <section class="leistungen" id="leistungen">
+    <div class="leistungen-inner">
+      <div class="leistungen-left reveal">
+        <p class="label">Leistungen & Pakete</p>
+        <h2>Was in Ihrer<br>Hochzeit enthalten ist</h2>
+        <p>
+          Wir begleiten Sie vom ersten Besichtigungstermin bis zum letzten
+          Tanz. Unser erfahrenes Team sorgt dafür, dass Ihr Tag so wird,
+          wie Sie ihn sich erträumt haben.
+        </p>
+
+        <ul class="leistungen-list">
+          <li>Exklusive Nutzung des Schlosses & Gartens</li>
+          <li>Festsaal für bis zu 150 Personen</li>
+          <li>Standesamtliche Trauung auf dem Anwesen</li>
+          <li>Persönliche Hochzeitskoordination</li>
+          <li>Übernachtung im Schloss für das Brautpaar</li>
+          <li>Mehrere Schlossappartements für Gäste</li>
+          <li>Schlossgarten für Sektempfang & Outdoor-Zeremonie</li>
+          <li>Freie Wahl von Caterer, Musik & Dekoration</li>
+          <li>Ferienhaus Gückelhirn für weitere Gäste</li>
+          <li>Führungen & individuelle Besichtigungstermine</li>
+          <li>Flexible Auf- und Abbauzeiten</li>
+          <li>Parkplätze auf dem Anwesen</li>
+        </ul>
+
+        <div style="margin-top: 52px;">
+          <a href="#anfrage" class="btn" style="color:var(--white);border-color:rgba(255,255,255,0.4);">
+            Unverbindlich anfragen
+          </a>
+        </div>
+      </div>
+
+      <div class="leistungen-img reveal reveal-delay-1">
+        <img src="./public/images/zimmer.jpg" alt="Schlossappartement">
+        <div class="leistungen-img-label">
+          <p>„Jeder Moment soll sich anfühlen wie der schönste Ihrer Hochzeit."</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Testimonials ──────────────────────────────────────────────────── -->
+  <section class="testimonials" id="testimonials">
+    <div class="testimonials-header reveal">
+      <p class="label">Stimmen unserer Paare</p>
+      <div class="divider"></div>
+      <h2 class="display-md" style="margin-top:8px;">Was Brautpaare<br>über uns sagen</h2>
+    </div>
+
+    <div class="testimonials-grid">
+      <div class="testimonial reveal">
+        <div class="testimonial-mark">"</div>
+        <div class="testimonial-stars">
+          <svg class="star" viewBox="0 0 14 14" fill="currentColor"><path d="M7 1l1.8 3.6L13 5.3l-3 2.9.7 4.1L7 10.4 3.3 12.3l.7-4.1-3-2.9 4.2-.7z"/></svg>
+          <svg class="star" viewBox="0 0 14 14" fill="currentColor"><path d="M7 1l1.8 3.6L13 5.3l-3 2.9.7 4.1L7 10.4 3.3 12.3l.7-4.1-3-2.9 4.2-.7z"/></svg>
+          <svg class="star" viewBox="0 0 14 14" fill="currentColor"><path d="M7 1l1.8 3.6L13 5.3l-3 2.9.7 4.1L7 10.4 3.3 12.3l.7-4.1-3-2.9 4.2-.7z"/></svg>
+          <svg class="star" viewBox="0 0 14 14" fill="currentColor"><path d="M7 1l1.8 3.6L13 5.3l-3 2.9.7 4.1L7 10.4 3.3 12.3l.7-4.1-3-2.9 4.2-.7z"/></svg>
+          <svg class="star" viewBox="0 0 14 14" fill="currentColor"><path d="M7 1l1.8 3.6L13 5.3l-3 2.9.7 4.1L7 10.4 3.3 12.3l.7-4.1-3-2.9 4.2-.7z"/></svg>
+        </div>
+        <p class="testimonial-quote">
+          „Wir hatten uns immer gewünscht, an einem Ort zu heiraten, der Geschichte
+          erzählt — Schloss Burgpreppach war genau das. Die Atmosphäre war
+          magisch, und das Team hat alles perfekt koordiniert."
+        </p>
+        <div class="testimonial-author">
+          <span class="testimonial-name">Laura & Thomas K.</span>
+          <span class="testimonial-date">September 2024</span>
+        </div>
+      </div>
+
+      <div class="testimonial reveal reveal-delay-1">
+        <div class="testimonial-mark">"</div>
+        <div class="testimonial-stars">
+          <svg class="star" viewBox="0 0 14 14" fill="currentColor"><path d="M7 1l1.8 3.6L13 5.3l-3 2.9.7 4.1L7 10.4 3.3 12.3l.7-4.1-3-2.9 4.2-.7z"/></svg>
+          <svg class="star" viewBox="0 0 14 14" fill="currentColor"><path d="M7 1l1.8 3.6L13 5.3l-3 2.9.7 4.1L7 10.4 3.3 12.3l.7-4.1-3-2.9 4.2-.7z"/></svg>
+          <svg class="star" viewBox="0 0 14 14" fill="currentColor"><path d="M7 1l1.8 3.6L13 5.3l-3 2.9.7 4.1L7 10.4 3.3 12.3l.7-4.1-3-2.9 4.2-.7z"/></svg>
+          <svg class="star" viewBox="0 0 14 14" fill="currentColor"><path d="M7 1l1.8 3.6L13 5.3l-3 2.9.7 4.1L7 10.4 3.3 12.3l.7-4.1-3-2.9 4.2-.7z"/></svg>
+          <svg class="star" viewBox="0 0 14 14" fill="currentColor"><path d="M7 1l1.8 3.6L13 5.3l-3 2.9.7 4.1L7 10.4 3.3 12.3l.7-4.1-3-2.9 4.2-.7z"/></svg>
+        </div>
+        <p class="testimonial-quote">
+          „Die Exklusivität des Schlosses ist unschlagbar. Keine anderen Gäste,
+          nur wir und unsere Liebsten. Der Schlossgarten beim Sektempfang —
+          einfach unbeschreiblich schön."
+        </p>
+        <div class="testimonial-author">
+          <span class="testimonial-name">Julia & Markus W.</span>
+          <span class="testimonial-date">Juni 2024</span>
+        </div>
+      </div>
+
+      <div class="testimonial reveal reveal-delay-2">
+        <div class="testimonial-mark">"</div>
+        <div class="testimonial-stars">
+          <svg class="star" viewBox="0 0 14 14" fill="currentColor"><path d="M7 1l1.8 3.6L13 5.3l-3 2.9.7 4.1L7 10.4 3.3 12.3l.7-4.1-3-2.9 4.2-.7z"/></svg>
+          <svg class="star" viewBox="0 0 14 14" fill="currentColor"><path d="M7 1l1.8 3.6L13 5.3l-3 2.9.7 4.1L7 10.4 3.3 12.3l.7-4.1-3-2.9 4.2-.7z"/></svg>
+          <svg class="star" viewBox="0 0 14 14" fill="currentColor"><path d="M7 1l1.8 3.6L13 5.3l-3 2.9.7 4.1L7 10.4 3.3 12.3l.7-4.1-3-2.9 4.2-.7z"/></svg>
+          <svg class="star" viewBox="0 0 14 14" fill="currentColor"><path d="M7 1l1.8 3.6L13 5.3l-3 2.9.7 4.1L7 10.4 3.3 12.3l.7-4.1-3-2.9 4.2-.7z"/></svg>
+          <svg class="star" viewBox="0 0 14 14" fill="currentColor"><path d="M7 1l1.8 3.6L13 5.3l-3 2.9.7 4.1L7 10.4 3.3 12.3l.7-4.1-3-2.9 4.2-.7z"/></svg>
+        </div>
+        <p class="testimonial-quote">
+          „Das Übernachten im Schloss am Vorabend der Hochzeit war ein
+          Traum. Wir haben uns wie Prinz und Prinzessin gefühlt. Absolute
+          Empfehlung für jeden, der Stil und Exklusivität sucht."
+        </p>
+        <div class="testimonial-author">
+          <span class="testimonial-name">Anna & David S.</span>
+          <span class="testimonial-date">August 2024</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Anfrage ───────────────────────────────────────────────────────── -->
+  <section class="anfrage" id="anfrage">
+    <div class="anfrage-inner">
+      <div class="anfrage-info reveal">
+        <p class="label">Kontakt & Anfrage</p>
+        <h2>Lassen Sie uns<br>Ihren Tag gestalten</h2>
+        <p>
+          Vereinbaren Sie einen unverbindlichen Besichtigungstermin und überzeugen
+          Sie sich selbst von der einzigartigen Atmosphäre. Wir nehmen uns Zeit
+          für Sie und Ihre Vorstellungen.
+        </p>
+
+        <div class="contact-items">
+          <div class="contact-item">
+            <span class="contact-item-label">Adresse</span>
+            <span class="contact-item-value">Schloss Burgpreppach</span>
+            <span class="contact-item-sub">Burgpreppach, Unterfranken · Bayern</span>
+          </div>
+          <div class="contact-item">
+            <span class="contact-item-label">Telefon</span>
+            <span class="contact-item-value" style="font-size:18px;">
+              <a href="tel:+49">Auf Anfrage</a>
+            </span>
+          </div>
+          <div class="contact-item">
+            <span class="contact-item-label">E-Mail</span>
+            <span class="contact-item-value" style="font-size:18px;">
+              <a href="mailto:info@schloss-burgpreppach.de">info@schloss-burgpreppach.de</a>
+            </span>
+          </div>
+          <div class="contact-item">
+            <span class="contact-item-label">Besichtigungen</span>
+            <span class="contact-item-sub">Nach Vereinbarung · Ganzjährig möglich</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="reveal reveal-delay-1">
+        <form class="form" name="anfrage" action="#" method="POST">
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="name1">Ihr Vorname</label>
+              <input class="form-input" type="text" id="name1" name="vorname" placeholder="Maria" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="name2">Ihr Nachname</label>
+              <input class="form-input" type="text" id="name2" name="nachname" placeholder="Müller" required>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="email">E-Mail-Adresse</label>
+              <input class="form-input" type="email" id="email" name="email" placeholder="maria@beispiel.de" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="telefon">Telefon</label>
+              <input class="form-input" type="tel" id="telefon" name="telefon" placeholder="+49 ...">
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="datum">Wunschdatum</label>
+              <input class="form-input" type="date" id="datum" name="datum">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="gaeste">Gästezahl</label>
+              <select class="form-select" id="gaeste" name="gaeste">
+                <option value="">Bitte wählen</option>
+                <option>Bis 30 Personen</option>
+                <option>30 – 60 Personen</option>
+                <option>60 – 100 Personen</option>
+                <option>100 – 150 Personen</option>
+                <option>Über 150 Personen</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="nachricht">Ihre Nachricht</label>
+            <textarea class="form-textarea" id="nachricht" name="nachricht" placeholder="Erzählen Sie uns von Ihren Vorstellungen für Ihren besonderen Tag …" rows="4"></textarea>
+          </div>
+
+          <div class="form-submit">
+            <button type="submit" class="btn btn-dark">Anfrage absenden</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Footer ───────────────────────────────────────────────────────── -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div>
+          <div class="footer-brand-name">Schloss Burgpreppach</div>
+          <p class="footer-brand-desc">
+            Exklusive Hochzeitslocation im Herzen Unterfrankens.
+            Seit Generationen im Besitz der Familie Fuchs von Bimbach.
+          </p>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Navigation</div>
+          <ul class="footer-links">
+            <li><a href="#schloss">Das Schloss</a></li>
+            <li><a href="#galerie">Galerie</a></li>
+            <li><a href="#leistungen">Leistungen</a></li>
+            <li><a href="#testimonials">Stimmen</a></li>
+            <li><a href="#anfrage">Anfrage</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Location</div>
+          <ul class="footer-links">
+            <li><a href="#">Ferienhaus Gückelhirn</a></li>
+            <li><a href="#">Schlossführungen</a></li>
+            <li><a href="#">Geschichte des Schlosses</a></li>
+            <li><a href="#">Familie Fuchs von Bimbach</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Kontakt</div>
+          <ul class="footer-links">
+            <li><a href="mailto:info@schloss-burgpreppach.de">info@schloss-burgpreppach.de</a></li>
+            <li><a href="https://www.schloss-burgpreppach.de" target="_blank">schloss-burgpreppach.de</a></li>
+            <li><a href="#">Anfahrt</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copy">© 2025 Schloss Burgpreppach · Familie Fuchs von Bimbach</p>
+        <ul class="footer-legal">
+          <li><a href="#">Impressum</a></li>
+          <li><a href="#">Datenschutz</a></li>
+          <li><a href="#">AGB</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ─── GSAP + Lenis ─────────────────────────────────────────────────── -->
+  <script src="./node_modules/gsap/dist/gsap.min.js"></script>
+  <script src="./node_modules/gsap/dist/ScrollTrigger.min.js"></script>
+  <script src="./node_modules/lenis/dist/lenis.min.js"></script>
+
+  <!-- ─── Scripts ───────────────────────────────────────────────────────── -->
+  <script>
+    gsap.registerPlugin(ScrollTrigger);
+
+    // ── Lenis Smooth Scroll ──────────────────────────────────────────────
+    // Lenis v1: kein scrollerProxy nötig — Lenis schreibt window.scrollY
+    // direkt. GSAP-Ticker treibt Lenis an, Lenis feuert ScrollTrigger.update.
+    const lenis = new Lenis({
+      duration: 1.4,
+      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+      smoothWheel: true,
+    });
+
+    gsap.ticker.add((time) => lenis.raf(time * 1000));
+    gsap.ticker.lagSmoothing(0);
+    lenis.on('scroll', ScrollTrigger.update);
+
+    // Anchor-Links (nav, CTAs) über Lenis abwickeln statt nativem Scroll
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', (e) => {
+        e.preventDefault();
+        const target = document.querySelector(anchor.getAttribute('href'));
+        if (target) lenis.scrollTo(target, { offset: 0, duration: 1.6 });
+      });
+    });
+
+    // ── Video Scrubbing ──────────────────────────────────────────────────
+    const video = document.getElementById('heroVideo');
+
+    // Prevent autoplay — we control playback manually
+    video.pause();
+
+    // Once enough data is loaded, set up the scrub
+    function initScrub() {
+      // RAF throttle — browser decodes one frame per rAF, not per scroll tick
+      let targetTime = 0;
+      let rafPending = false;
+
+      function seekVideo() {
+        video.currentTime = targetTime;
+        rafPending = false;
+      }
+
+      ScrollTrigger.create({
+        trigger: '.hero-wrapper',
+        start: 'top top',
+        end: 'bottom bottom',
+        scrub: true,                    // immediate — no catch-up lag
+        onUpdate: (self) => {
+          const t = self.progress * video.duration;
+          if (!isFinite(t)) return;
+          targetTime = t;
+          if (!rafPending) {
+            rafPending = true;
+            requestAnimationFrame(seekVideo);
+          }
+        }
+      });
+
+      // ── Akt 1: 0–20% sichtbar, 20–30% fade out ──────────────────────
+      gsap.to('#heroContent', {
+        opacity: 0,
+        y: -32,
+        ease: 'power2.in',
+        scrollTrigger: {
+          trigger: '.hero-wrapper',
+          start: '20% top',
+          end: '30% top',
+          scrub: true,
+        }
+      });
+
+      // ── Akt 2: 28–38% fade in, 56–66% fade out ───────────────────────
+      gsap.fromTo('#heroAct2',
+        { opacity: 0, y: 40, pointerEvents: 'none' },
+        {
+          opacity: 1,
+          y: 0,
+          ease: 'power2.out',
+          scrollTrigger: {
+            trigger: '.hero-wrapper',
+            start: '28% top',
+            end: '38% top',
+            scrub: true,
+            onEnter: () => document.getElementById('heroAct2').style.pointerEvents = 'auto',
+            onLeaveBack: () => document.getElementById('heroAct2').style.pointerEvents = 'none',
+          }
+        }
+      );
+      gsap.to('#heroAct2', {
+        opacity: 0,
+        y: -32,
+        ease: 'power2.in',
+        scrollTrigger: {
+          trigger: '.hero-wrapper',
+          start: '56% top',
+          end: '66% top',
+          scrub: true,
+          onLeaveBack: () => document.getElementById('heroAct2').style.pointerEvents = 'auto',
+          onEnter: () => document.getElementById('heroAct2').style.pointerEvents = 'none',
+        }
+      });
+
+      // ── Akt 3: 64–74% fade in, bleibt bis 100% sichtbar ─────────────
+      gsap.fromTo('#heroAct3',
+        { opacity: 0, y: 40, pointerEvents: 'none' },
+        {
+          opacity: 1,
+          y: 0,
+          ease: 'power2.out',
+          scrollTrigger: {
+            trigger: '.hero-wrapper',
+            start: '64% top',
+            end: '74% top',
+            scrub: true,
+            onEnter: () => document.getElementById('heroAct3').style.pointerEvents = 'auto',
+            onLeaveBack: () => document.getElementById('heroAct3').style.pointerEvents = 'none',
+          }
+        }
+      );
+
+      // Fade scroll indicator out immediately on scroll
+      gsap.to('.hero-scroll', {
+        opacity: 0,
+        ease: 'none',
+        scrollTrigger: {
+          trigger: '.hero-wrapper',
+          start: '5% top',
+          end: '15% top',
+          scrub: true,
+        }
+      });
+    }
+
+    if (video.readyState >= 2) {
+      initScrub();
+    } else {
+      video.addEventListener('loadedmetadata', initScrub, { once: true });
+    }
+
+    // ScrollTrigger nach vollem Page-Load neu berechnen (Bilder, Fonts etc.)
+    window.addEventListener('load', () => ScrollTrigger.refresh());
+
+    // ── Nav scroll behavior ──────────────────────────────────────────────
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 60);
+    }, { passive: true });
+
+    // ── Mobile menu ──────────────────────────────────────────────────────
+    const burger = document.getElementById('burger');
+    const mobileNav = document.getElementById('mobileNav');
+    const mobileClose = document.getElementById('mobileClose');
+
+    burger.addEventListener('click', () => mobileNav.classList.add('open'));
+    mobileClose.addEventListener('click', () => mobileNav.classList.remove('open'));
+    document.querySelectorAll('.mobile-link').forEach(link => {
+      link.addEventListener('click', () => mobileNav.classList.remove('open'));
+    });
+
+    // ── Scroll reveal ────────────────────────────────────────────────────
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,117 @@
+{
+  "library": "unknown",
+  "confidence": 0,
+  "alternates": [],
+  "stats": {
+    "count": 16,
+    "strokeOnly": 2,
+    "fillOnly": 12,
+    "mixed": 2,
+    "avgStrokeWidth": 0,
+    "gridDistribution": {
+      "64": 6
+    },
+    "roundedCapsFraction": 0
+  },
+  "signals": [
+    "fillDominant"
+  ],
+  "icons": [
+    {
+      "class": "",
+      "grid": 64,
+      "strokeWidth": null,
+      "style": "fill"
+    },
+    {
+      "class": "",
+      "grid": 64,
+      "strokeWidth": null,
+      "style": "fill"
+    },
+    {
+      "class": "",
+      "grid": null,
+      "strokeWidth": null,
+      "style": "mixed"
+    },
+    {
+      "class": "",
+      "grid": 64,
+      "strokeWidth": null,
+      "style": "fill"
+    },
+    {
+      "class": "",
+      "grid": 64,
+      "strokeWidth": null,
+      "style": "fill"
+    },
+    {
+      "class": "",
+      "grid": null,
+      "strokeWidth": null,
+      "style": "mixed"
+    },
+    {
+      "class": "",
+      "grid": null,
+      "strokeWidth": null,
+      "style": "fill"
+    },
+    {
+      "class": "icon--not-pressed",
+      "grid": null,
+      "strokeWidth": null,
+      "style": "fill"
+    },
+    {
+      "class": "",
+      "grid": null,
+      "strokeWidth": null,
+      "style": "fill"
+    },
+    {
+      "class": "icon--not-pressed",
+      "grid": null,
+      "strokeWidth": null,
+      "style": "fill"
+    },
+    {
+      "class": "",
+      "grid": null,
+      "strokeWidth": null,
+      "style": "fill"
+    },
+    {
+      "class": "",
+      "grid": null,
+      "strokeWidth": null,
+      "style": "fill"
+    },
+    {
+      "class": "",
+      "grid": null,
+      "strokeWidth": null,
+      "style": "stroke"
+    },
+    {
+      "class": "sqs-svg-icon--social",
+      "grid": 64,
+      "strokeWidth": null,
+      "style": "fill"
+    },
+    {
+      "class": "sqs-svg-icon--social",
+      "grid": 64,
+      "strokeWidth": null,
+      "style": "fill"
+    },
+    {
+      "class": "",
+      "grid": null,
+      "strokeWidth": null,
+      "style": "stroke"
+    }
+  ]
+}

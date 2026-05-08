@@ -1,0 +1,1571 @@
+{
+  "colors": {
+    "all": [
+      {
+        "hex": "#5a5a5a",
+        "rgb": {
+          "r": 90,
+          "g": 90,
+          "b": 90,
+          "a": 1
+        },
+        "hsl": {
+          "h": 0,
+          "s": 0,
+          "l": 35
+        },
+        "count": 1642,
+        "contexts": [
+          "text",
+          "border",
+          "background"
+        ]
+      },
+      {
+        "hex": "#000000",
+        "rgb": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 1
+        },
+        "hsl": {
+          "h": 0,
+          "s": 0,
+          "l": 0
+        },
+        "count": 341,
+        "contexts": [
+          "text",
+          "border",
+          "background"
+        ]
+      },
+      {
+        "hex": "#f7f7f7",
+        "rgb": {
+          "r": 247,
+          "g": 247,
+          "b": 247,
+          "a": 1
+        },
+        "hsl": {
+          "h": 0,
+          "s": 0,
+          "l": 97
+        },
+        "count": 130,
+        "contexts": [
+          "background",
+          "text",
+          "border"
+        ]
+      },
+      {
+        "hex": "#e7e7e7",
+        "rgb": {
+          "r": 231,
+          "g": 231,
+          "b": 231,
+          "a": 1
+        },
+        "hsl": {
+          "h": 0,
+          "s": 0,
+          "l": 91
+        },
+        "count": 36,
+        "contexts": [
+          "text",
+          "border"
+        ]
+      },
+      {
+        "hex": "#333333",
+        "rgb": {
+          "r": 51,
+          "g": 51,
+          "b": 51,
+          "a": 1
+        },
+        "hsl": {
+          "h": 0,
+          "s": 0,
+          "l": 20
+        },
+        "count": 16,
+        "contexts": [
+          "text",
+          "border"
+        ]
+      },
+      {
+        "hex": "#4a5464",
+        "rgb": {
+          "r": 74,
+          "g": 84,
+          "b": 100,
+          "a": 1
+        },
+        "hsl": {
+          "h": 217,
+          "s": 15,
+          "l": 34
+        },
+        "count": 12,
+        "contexts": [
+          "text",
+          "border"
+        ]
+      },
+      {
+        "hex": "#bebebe",
+        "rgb": {
+          "r": 190,
+          "g": 190,
+          "b": 190,
+          "a": 1
+        },
+        "hsl": {
+          "h": 0,
+          "s": 0,
+          "l": 75
+        },
+        "count": 5,
+        "contexts": [
+          "background",
+          "border",
+          "text"
+        ]
+      },
+      {
+        "hex": "#dcdcdc",
+        "rgb": {
+          "r": 220,
+          "g": 220,
+          "b": 220,
+          "a": 1
+        },
+        "hsl": {
+          "h": 0,
+          "s": 0,
+          "l": 86
+        },
+        "count": 5,
+        "contexts": [
+          "background",
+          "text",
+          "border"
+        ]
+      },
+      {
+        "hex": "#262626",
+        "rgb": {
+          "r": 38,
+          "g": 38,
+          "b": 38,
+          "a": 0.9
+        },
+        "hsl": {
+          "h": 0,
+          "s": 0,
+          "l": 15
+        },
+        "count": 2,
+        "contexts": [
+          "background"
+        ]
+      },
+      {
+        "hex": "#1a1a1a",
+        "rgb": {
+          "r": 26,
+          "g": 26,
+          "b": 26,
+          "a": 1
+        },
+        "hsl": {
+          "h": 0,
+          "s": 0,
+          "l": 10
+        },
+        "count": 2,
+        "contexts": [
+          "text",
+          "border"
+        ]
+      },
+      {
+        "hex": "#8a8b8f",
+        "rgb": {
+          "r": 138,
+          "g": 139,
+          "b": 143,
+          "a": 1
+        },
+        "hsl": {
+          "h": 228,
+          "s": 2,
+          "l": 55
+        },
+        "count": 1,
+        "contexts": [
+          "background"
+        ]
+      }
+    ]
+  },
+  "regions": [
+    {
+      "role": "content",
+      "tag": "section",
+      "bounds": {
+        "x": 20,
+        "y": 605.4375,
+        "w": 360,
+        "h": 174.5625
+      },
+      "heading": null,
+      "buttonCount": 4,
+      "cardCount": 0,
+      "className": "gdpr-cookie-banner BOTTOM_LEFT popup full-styling"
+    },
+    {
+      "role": "nav",
+      "tag": "header",
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "w": 1280,
+        "h": 68.28125
+      },
+      "heading": null,
+      "buttonCount": 5,
+      "cardCount": 67,
+      "className": "white header theme-col--primary"
+    },
+    {
+      "role": "nav",
+      "tag": "nav",
+      "bounds": {
+        "x": 437.4375,
+        "y": 15.359375,
+        "w": 407.125,
+        "h": 37.5625
+      },
+      "heading": null,
+      "buttonCount": 1,
+      "cardCount": 19,
+      "className": "header-nav-list"
+    },
+    {
+      "role": "nav",
+      "tag": "nav",
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "heading": null,
+      "buttonCount": 1,
+      "cardCount": 19,
+      "className": "header-nav-list"
+    },
+    {
+      "role": "nav",
+      "tag": "nav",
+      "bounds": {
+        "x": 0,
+        "y": 88.28125,
+        "w": 1280,
+        "h": 731.71875
+      },
+      "heading": null,
+      "buttonCount": 0,
+      "cardCount": 27,
+      "className": "header-menu-nav-list"
+    },
+    {
+      "role": "content",
+      "tag": "main",
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "w": 1280,
+        "h": 6084.0625
+      },
+      "heading": "Hier wird aus einem\n“JA” ein ”FÜR IMMER”  ",
+      "buttonCount": 23,
+      "cardCount": 7,
+      "className": "container"
+    },
+    {
+      "role": "content",
+      "tag": "section",
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "w": 1280,
+        "h": 800
+      },
+      "heading": null,
+      "buttonCount": 0,
+      "cardCount": 0,
+      "className": "page-section \n    \n      full-bleed-section\n      layout-engine-section\n    \n    background-width--full-bleed\n    \n      section-height--small\n    \n    \n      content-width--wide\n    \n    horizontal-alignment--center\n    vertical-alignment--middle\n    \n       has-background\n    \n    \n    white"
+    },
+    {
+      "role": "content",
+      "tag": "section",
+      "bounds": {
+        "x": 0,
+        "y": 800,
+        "w": 1280,
+        "h": 594
+      },
+      "heading": "Hier wird aus einem\n“JA” ein ”FÜR IMMER”  ",
+      "buttonCount": 0,
+      "cardCount": 0,
+      "className": "page-section \n    \n      full-bleed-section\n      layout-engine-section\n    \n    background-width--full-bleed\n    \n      \n        section-height--custom\n      \n    \n    \n      content-width--wide\n    \n    horizontal-alignment--center\n    vertical-alignment--middle\n    \n      \n    \n    \n    light"
+    },
+    {
+      "role": "content",
+      "tag": "section",
+      "bounds": {
+        "x": 0,
+        "y": 1394,
+        "w": 1280,
+        "h": 272
+      },
+      "heading": null,
+      "buttonCount": 0,
+      "cardCount": 0,
+      "className": "page-section \n    \n      full-bleed-section\n      layout-engine-section\n    \n    background-width--full-bleed\n    \n      \n      \n    \n    \n      content-width--wide\n    \n    horizontal-alignment--center\n    vertical-alignment--middle\n    \n      \n    \n    \n    "
+    },
+    {
+      "role": "hero",
+      "tag": "section",
+      "bounds": {
+        "x": 0,
+        "y": 1666,
+        "w": 1280,
+        "h": 682.671875
+      },
+      "heading": "Eure Liebe,\nunser Herzblut",
+      "buttonCount": 5,
+      "cardCount": 0,
+      "className": "page-section \n    \n      full-bleed-section\n      layout-engine-section\n    \n    background-width--full-bleed\n    \n      \n        section-height--custom\n      \n    \n    \n      content-width--wide\n    \n    horizontal-alignment--center\n    vertical-alignment--middle\n    \n      \n    \n    \n    bright"
+    },
+    {
+      "role": "content",
+      "tag": "section",
+      "bounds": {
+        "x": 0,
+        "y": 2348.671875,
+        "w": 1280,
+        "h": 1463.375
+      },
+      "heading": "EIN ORT\nFÜR JUBELNDE HERZEN",
+      "buttonCount": 0,
+      "cardCount": 0,
+      "className": "page-section \n    \n      full-bleed-section\n      layout-engine-section\n    \n    background-width--full-bleed\n    \n      \n        section-height--custom\n      \n    \n    \n      content-width--wide\n    \n    horizontal-alignment--center\n    vertical-alignment--middle\n    \n      \n    \n    \n    "
+    },
+    {
+      "role": "content",
+      "tag": "section",
+      "bounds": {
+        "x": 0,
+        "y": 3812.046875,
+        "w": 1280,
+        "h": 843.9375
+      },
+      "heading": null,
+      "buttonCount": 13,
+      "cardCount": 6,
+      "className": "page-section full-bleed-section layout-engine-section background-width--full-bleed content-width--wide horizontal-alignment--center vertical-alignment--middle show-section"
+    },
+    {
+      "role": "content",
+      "tag": "section",
+      "bounds": {
+        "x": 0,
+        "y": 4655.984375,
+        "w": 1280,
+        "h": 591.3125
+      },
+      "heading": "Lernt schon jetzt den Hohen Darsberg über unseren\nVirtuellen Rundgang näher kennen! ",
+      "buttonCount": 0,
+      "cardCount": 0,
+      "className": "page-section \n    \n      full-bleed-section\n      layout-engine-section\n    \n    background-width--full-bleed\n    \n      \n      \n    \n    \n      content-width--wide\n    \n    horizontal-alignment--center\n    vertical-alignment--middle\n    \n      \n    \n    \n    "
+    },
+    {
+      "role": "hero",
+      "tag": "section",
+      "bounds": {
+        "x": 0,
+        "y": 5247.296875,
+        "w": 1280,
+        "h": 836.765625
+      },
+      "heading": "Der Hohe Darsberg macht Euch neugierig?\nKommt doch einfach mal vorbei! ",
+      "buttonCount": 5,
+      "cardCount": 0,
+      "className": "page-section \n    \n      full-bleed-section\n      layout-engine-section\n    \n    background-width--full-bleed\n    \n      \n        section-height--custom\n      \n    \n    \n      content-width--wide\n    \n    horizontal-alignment--center\n    vertical-alignment--middle\n    \n      \n    \n    \n    "
+    },
+    {
+      "role": "footer",
+      "tag": "footer",
+      "bounds": {
+        "x": 0,
+        "y": 6084.0625,
+        "w": 1280,
+        "h": 206.875
+      },
+      "heading": null,
+      "buttonCount": 0,
+      "cardCount": 0,
+      "className": "sections"
+    },
+    {
+      "role": "content",
+      "tag": "section",
+      "bounds": {
+        "x": 0,
+        "y": 6084.0625,
+        "w": 1280,
+        "h": 206.875
+      },
+      "heading": null,
+      "buttonCount": 0,
+      "cardCount": 0,
+      "className": "page-section \n    \n      full-bleed-section\n      layout-engine-section\n    \n    background-width--full-bleed\n    \n      \n        section-height--custom\n      \n    \n    \n      content-width--wide\n    \n    horizontal-alignment--center\n    vertical-alignment--middle\n    \n      \n    \n    \n    white"
+    },
+    {
+      "role": "nav",
+      "tag": "nav",
+      "bounds": {
+        "x": 539.71875,
+        "y": 6187.5,
+        "w": 200.5625,
+        "h": 20
+      },
+      "heading": null,
+      "buttonCount": 0,
+      "cardCount": 0,
+      "className": "sqs-svg-icon--list"
+    }
+  ],
+  "componentClusters": [
+    {
+      "kind": "button",
+      "structuralHash": "body>div>script>script>script>style",
+      "instanceCount": 1,
+      "variants": [
+        {
+          "css": {
+            "background": "rgb(247, 247, 247)",
+            "color": "rgb(90, 90, 90)",
+            "padding": "0px 0px 0px 0px",
+            "borderRadius": "0px",
+            "border": "0px none rgb(90, 90, 90)",
+            "fontSize": "16px",
+            "fontWeight": "400"
+          },
+          "instanceCount": 1
+        }
+      ]
+    },
+    {
+      "kind": "button",
+      "structuralHash": "div>button>button>button",
+      "instanceCount": 1,
+      "variants": [
+        {
+          "css": {
+            "background": "rgba(0, 0, 0, 0)",
+            "color": "rgb(90, 90, 90)",
+            "padding": "0px 0px 0px 0px",
+            "borderRadius": "0px",
+            "border": "0px none rgb(90, 90, 90)",
+            "fontSize": "12px",
+            "fontWeight": "400"
+          },
+          "instanceCount": 1
+        }
+      ]
+    },
+    {
+      "kind": "button",
+      "structuralHash": "button>span",
+      "instanceCount": 4,
+      "variants": [
+        {
+          "css": {
+            "background": "rgba(0, 0, 0, 0)",
+            "color": "rgb(90, 90, 90)",
+            "padding": "11px 15px 11px 15px",
+            "borderRadius": "0px",
+            "border": "0px 0px 1px none none solid rgb(90, 90, 90)",
+            "fontSize": "12px",
+            "fontWeight": "300"
+          },
+          "instanceCount": 2
+        },
+        {
+          "css": {
+            "background": "rgb(190, 190, 190)",
+            "color": "rgb(255, 255, 255)",
+            "padding": "11px 15px 11px 15px",
+            "borderRadius": "300px",
+            "border": "0px solid rgb(255, 255, 255)",
+            "fontSize": "12px",
+            "fontWeight": "400"
+          },
+          "instanceCount": 1
+        },
+        {
+          "css": {
+            "background": "rgb(220, 220, 220)",
+            "color": "rgb(255, 255, 255)",
+            "padding": "11px 15px 11px 15px",
+            "borderRadius": "0px",
+            "border": "0px solid rgb(255, 255, 255)",
+            "fontSize": "12px",
+            "fontWeight": "500"
+          },
+          "instanceCount": 1
+        }
+      ]
+    },
+    {
+      "kind": "button",
+      "structuralHash": "a",
+      "instanceCount": 4,
+      "variants": [
+        {
+          "css": {
+            "background": "rgb(90, 90, 90)",
+            "color": "rgb(255, 255, 255)",
+            "padding": "16px 20.8px 16px 20.8px",
+            "borderRadius": "0px",
+            "border": "0px 0px 1px none none solid rgb(90, 90, 90)",
+            "fontSize": "11.392px",
+            "fontWeight": "400"
+          },
+          "instanceCount": 1
+        },
+        {
+          "css": {
+            "background": "rgba(0, 0, 0, 0)",
+            "color": "rgb(0, 0, 0)",
+            "padding": "0px 20.8px 0px 20.8px",
+            "borderRadius": "0px",
+            "border": "0px 0px 1px none none solid rgb(0, 0, 0)",
+            "fontSize": "16px",
+            "fontWeight": "300"
+          },
+          "instanceCount": 1
+        },
+        {
+          "css": {
+            "background": "rgba(0, 0, 0, 0)",
+            "color": "rgb(90, 90, 90)",
+            "padding": "0px 20.8px 0px 20.8px",
+            "borderRadius": "0px",
+            "border": "0px 0px 1px none none solid rgb(90, 90, 90)",
+            "fontSize": "16px",
+            "fontWeight": "300"
+          },
+          "instanceCount": 1
+        },
+        {
+          "css": {
+            "background": "rgba(0, 0, 0, 0)",
+            "color": "rgb(217, 217, 217)",
+            "padding": "6.4px 11.2px 6.4px 11.2px",
+            "borderRadius": "0px",
+            "border": "0px none rgb(217, 217, 217)",
+            "fontSize": "16px",
+            "fontWeight": "400"
+          },
+          "instanceCount": 1
+        }
+      ]
+    },
+    {
+      "kind": "button",
+      "structuralHash": "div>div",
+      "instanceCount": 2,
+      "variants": [
+        {
+          "css": {
+            "background": "rgba(0, 0, 0, 0)",
+            "color": "rgb(0, 0, 0)",
+            "padding": "0px 0px 0px 0px",
+            "borderRadius": "0px",
+            "border": "0px none rgb(0, 0, 0)",
+            "fontSize": "16px",
+            "fontWeight": "400"
+          },
+          "instanceCount": 2
+        }
+      ]
+    },
+    {
+      "kind": "button",
+      "structuralHash": "div>a",
+      "instanceCount": 2,
+      "variants": [
+        {
+          "css": {
+            "background": "rgba(0, 0, 0, 0)",
+            "color": "rgb(0, 0, 0)",
+            "padding": "0px 0px 0px 0px",
+            "borderRadius": "0px",
+            "border": "0px none rgb(0, 0, 0)",
+            "fontSize": "16px",
+            "fontWeight": "400"
+          },
+          "instanceCount": 2
+        }
+      ]
+    },
+    {
+      "kind": "button",
+      "structuralHash": "button>svg>span",
+      "instanceCount": 2,
+      "variants": [
+        {
+          "css": {
+            "background": "rgba(0, 0, 0, 0.5)",
+            "color": "rgb(255, 255, 255)",
+            "padding": "15px 15px 15px 15px",
+            "borderRadius": "100%",
+            "border": "0px none rgb(255, 255, 255)",
+            "fontSize": "16px",
+            "fontWeight": "400"
+          },
+          "instanceCount": 2
+        }
+      ]
+    },
+    {
+      "kind": "button",
+      "structuralHash": "button>svg>svg>span>span",
+      "instanceCount": 2,
+      "variants": [
+        {
+          "css": {
+            "background": "rgba(0, 0, 0, 0)",
+            "color": "rgb(231, 231, 231)",
+            "padding": "0px 0px 0px 0px",
+            "borderRadius": "4px",
+            "border": "0px none rgb(231, 231, 231)",
+            "fontSize": "16px",
+            "fontWeight": "400"
+          },
+          "instanceCount": 2
+        }
+      ]
+    },
+    {
+      "kind": "card",
+      "structuralHash": "div>div>div",
+      "instanceCount": 1,
+      "variants": [
+        {
+          "css": {
+            "background": "rgba(0, 0, 0, 0.3)",
+            "color": "rgb(90, 90, 90)",
+            "padding": "0px 0px 0px 0px",
+            "borderRadius": "0px",
+            "border": "0px none rgb(90, 90, 90)",
+            "fontSize": "16px",
+            "fontWeight": "400"
+          },
+          "instanceCount": 1
+        }
+      ]
+    }
+  ],
+  "accessibility": {
+    "remediation": []
+  },
+  "cssHealth": {
+    "sheets": [
+      {
+        "url": "https://www.hoher-darsberg.de/home",
+        "totalBytes": 152,
+        "usedBytes": 0,
+        "unusedBytes": 152,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.hoher-darsberg.de/home",
+        "totalBytes": 715,
+        "usedBytes": 682,
+        "unusedBytes": 33,
+        "unusedPercent": 5
+      },
+      {
+        "url": "https://www.hoher-darsberg.de/home",
+        "totalBytes": 12,
+        "usedBytes": 0,
+        "unusedBytes": 12,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.hoher-darsberg.de/home",
+        "totalBytes": 809,
+        "usedBytes": 755,
+        "unusedBytes": 54,
+        "unusedPercent": 7
+      },
+      {
+        "url": "https://www.hoher-darsberg.de/home",
+        "totalBytes": 811,
+        "usedBytes": 757,
+        "unusedBytes": 54,
+        "unusedPercent": 7
+      },
+      {
+        "url": "https://www.hoher-darsberg.de/home",
+        "totalBytes": 4041,
+        "usedBytes": 3165,
+        "unusedBytes": 876,
+        "unusedPercent": 22
+      },
+      {
+        "url": "https://www.hoher-darsberg.de/home",
+        "totalBytes": 809,
+        "usedBytes": 755,
+        "unusedBytes": 54,
+        "unusedPercent": 7
+      },
+      {
+        "url": "https://static1.squarespace.com/static/custom-css/675a1f91a5ecca0513671f93/675a1f92a5ecca0513671f9b/22/custom.css",
+        "totalBytes": 2702,
+        "usedBytes": 450,
+        "unusedBytes": 2252,
+        "unusedPercent": 83
+      },
+      {
+        "url": "https://www.hoher-darsberg.de/home",
+        "totalBytes": 12,
+        "usedBytes": 0,
+        "unusedBytes": 12,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.hoher-darsberg.de/home",
+        "totalBytes": 808,
+        "usedBytes": 754,
+        "unusedBytes": 54,
+        "unusedPercent": 7
+      },
+      {
+        "url": "https://www.hoher-darsberg.de/home",
+        "totalBytes": 12,
+        "usedBytes": 0,
+        "unusedBytes": 12,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.hoher-darsberg.de/home",
+        "totalBytes": 12,
+        "usedBytes": 0,
+        "unusedBytes": 12,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.hoher-darsberg.de/home",
+        "totalBytes": 12,
+        "usedBytes": 0,
+        "unusedBytes": 12,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.hoher-darsberg.de/home",
+        "totalBytes": 111,
+        "usedBytes": 0,
+        "unusedBytes": 111,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.hoher-darsberg.de/home",
+        "totalBytes": 809,
+        "usedBytes": 755,
+        "unusedBytes": 54,
+        "unusedPercent": 7
+      },
+      {
+        "url": "https://www.hoher-darsberg.de/home",
+        "totalBytes": 809,
+        "usedBytes": 755,
+        "unusedBytes": 54,
+        "unusedPercent": 7
+      },
+      {
+        "url": "https://www.hoher-darsberg.de/home",
+        "totalBytes": 5383,
+        "usedBytes": 4411,
+        "unusedBytes": 972,
+        "unusedPercent": 18
+      },
+      {
+        "url": "https://www.hoher-darsberg.de/home",
+        "totalBytes": 4019,
+        "usedBytes": 3701,
+        "unusedBytes": 318,
+        "unusedPercent": 8
+      },
+      {
+        "url": "https://www.hoher-darsberg.de/home",
+        "totalBytes": 12,
+        "usedBytes": 0,
+        "unusedBytes": 12,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.hoher-darsberg.de/home",
+        "totalBytes": 715,
+        "usedBytes": 682,
+        "unusedBytes": 33,
+        "unusedPercent": 5
+      },
+      {
+        "url": "https://www.hoher-darsberg.de/home",
+        "totalBytes": 415,
+        "usedBytes": 0,
+        "unusedBytes": 415,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.hoher-darsberg.de/home",
+        "totalBytes": 417,
+        "usedBytes": 0,
+        "unusedBytes": 417,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.hoher-darsberg.de/home",
+        "totalBytes": 198,
+        "usedBytes": 124,
+        "unusedBytes": 74,
+        "unusedPercent": 37
+      },
+      {
+        "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.video/18ccc0b6-9947-47de-a107-66a1d16d4c4e_263/website.components.video.styles.css",
+        "totalBytes": 3302,
+        "usedBytes": 541,
+        "unusedBytes": 2761,
+        "unusedPercent": 84
+      },
+      {
+        "url": "https://www.hoher-darsberg.de/home",
+        "totalBytes": 715,
+        "usedBytes": 682,
+        "unusedBytes": 33,
+        "unusedPercent": 5
+      },
+      {
+        "url": "https://www.hoher-darsberg.de/home",
+        "totalBytes": 810,
+        "usedBytes": 756,
+        "unusedBytes": 54,
+        "unusedPercent": 7
+      },
+      {
+        "url": "https://www.hoher-darsberg.de/home",
+        "totalBytes": 12,
+        "usedBytes": 0,
+        "unusedBytes": 12,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.hoher-darsberg.de/home",
+        "totalBytes": 393,
+        "usedBytes": 0,
+        "unusedBytes": 393,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.hoher-darsberg.de/home",
+        "totalBytes": 393,
+        "usedBytes": 0,
+        "unusedBytes": 393,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.hoher-darsberg.de/home",
+        "totalBytes": 12,
+        "usedBytes": 0,
+        "unusedBytes": 12,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.hoher-darsberg.de/home",
+        "totalBytes": 393,
+        "usedBytes": 0,
+        "unusedBytes": 393,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/561c5dbb-c56e-41d1-8794-6e96d523c89d_505/website.components.imageFluid.styles.css",
+        "totalBytes": 3034,
+        "usedBytes": 1864,
+        "unusedBytes": 1170,
+        "unusedPercent": 39
+      },
+      {
+        "url": "https://www.hoher-darsberg.de/home",
+        "totalBytes": 393,
+        "usedBytes": 0,
+        "unusedBytes": 393,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.hoher-darsberg.de/home",
+        "totalBytes": 6206,
+        "usedBytes": 5565,
+        "unusedBytes": 641,
+        "unusedPercent": 10
+      },
+      {
+        "url": "https://www.hoher-darsberg.de/home",
+        "totalBytes": 393,
+        "usedBytes": 0,
+        "unusedBytes": 393,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.hoher-darsberg.de/home",
+        "totalBytes": 12,
+        "usedBytes": 0,
+        "unusedBytes": 12,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.hoher-darsberg.de/home",
+        "totalBytes": 393,
+        "usedBytes": 0,
+        "unusedBytes": 393,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.hoher-darsberg.de/home",
+        "totalBytes": 787,
+        "usedBytes": 754,
+        "unusedBytes": 33,
+        "unusedPercent": 4
+      },
+      {
+        "url": "https://www.hoher-darsberg.de/home",
+        "totalBytes": 715,
+        "usedBytes": 682,
+        "unusedBytes": 33,
+        "unusedPercent": 5
+      },
+      {
+        "url": "https://www.hoher-darsberg.de/home",
+        "totalBytes": 12,
+        "usedBytes": 0,
+        "unusedBytes": 12,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.hoher-darsberg.de/home",
+        "totalBytes": 810,
+        "usedBytes": 756,
+        "unusedBytes": 54,
+        "unusedPercent": 7
+      },
+      {
+        "url": "https://www.hoher-darsberg.de/home",
+        "totalBytes": 393,
+        "usedBytes": 0,
+        "unusedBytes": 393,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://assets.squarespace.com/universal/styles-compressed/user-account-core-b31fa72f1ac27a50-min.en-US.css",
+        "totalBytes": 2301,
+        "usedBytes": 0,
+        "unusedBytes": 2301,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.hoher-darsberg.de/home",
+        "totalBytes": 12,
+        "usedBytes": 0,
+        "unusedBytes": 12,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.hoher-darsberg.de/home",
+        "totalBytes": 12,
+        "usedBytes": 0,
+        "unusedBytes": 12,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.hoher-darsberg.de/home",
+        "totalBytes": 809,
+        "usedBytes": 755,
+        "unusedBytes": 54,
+        "unusedPercent": 7
+      },
+      {
+        "url": "https://www.hoher-darsberg.de/home",
+        "totalBytes": 12,
+        "usedBytes": 0,
+        "unusedBytes": 12,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.hoher-darsberg.de/home",
+        "totalBytes": 787,
+        "usedBytes": 754,
+        "unusedBytes": 33,
+        "unusedPercent": 4
+      },
+      {
+        "url": "https://www.hoher-darsberg.de/home",
+        "totalBytes": 601,
+        "usedBytes": 589,
+        "unusedBytes": 12,
+        "unusedPercent": 2
+      },
+      {
+        "url": "https://www.hoher-darsberg.de/home",
+        "totalBytes": 12,
+        "usedBytes": 0,
+        "unusedBytes": 12,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400&family=Cormorant+Garamond:ital,wght@0,300;0,700;1,300;1,700&family=Roboto:ital,wght@0,300;0,700;1,300;1,700",
+        "totalBytes": 30463,
+        "usedBytes": 0,
+        "unusedBytes": 30463,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.hoher-darsberg.de/home",
+        "totalBytes": 715,
+        "usedBytes": 682,
+        "unusedBytes": 33,
+        "unusedPercent": 5
+      },
+      {
+        "url": "https://www.hoher-darsberg.de/home",
+        "totalBytes": 12,
+        "usedBytes": 0,
+        "unusedBytes": 12,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.hoher-darsberg.de/home",
+        "totalBytes": 12,
+        "usedBytes": 0,
+        "unusedBytes": 12,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.html/82801178-b7bb-43c4-a910-6b0ca726dd8c_518/website.components.html.styles.css",
+        "totalBytes": 118,
+        "usedBytes": 116,
+        "unusedBytes": 2,
+        "unusedPercent": 2
+      },
+      {
+        "url": "https://www.hoher-darsberg.de/home",
+        "totalBytes": 12,
+        "usedBytes": 0,
+        "unusedBytes": 12,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.hoher-darsberg.de/home",
+        "totalBytes": 12,
+        "usedBytes": 0,
+        "unusedBytes": 12,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.hoher-darsberg.de/home",
+        "totalBytes": 644,
+        "usedBytes": 263,
+        "unusedBytes": 381,
+        "unusedPercent": 59
+      },
+      {
+        "url": "https://www.hoher-darsberg.de/home",
+        "totalBytes": 7090,
+        "usedBytes": 5134,
+        "unusedBytes": 1956,
+        "unusedPercent": 28
+      },
+      {
+        "url": "https://www.hoher-darsberg.de/home",
+        "totalBytes": 12,
+        "usedBytes": 0,
+        "unusedBytes": 12,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.hoher-darsberg.de/home",
+        "totalBytes": 809,
+        "usedBytes": 755,
+        "unusedBytes": 54,
+        "unusedPercent": 7
+      },
+      {
+        "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.button/0cd3f778-abe3-4296-aa03-ab5238ad475a_688/website.components.button.styles.css",
+        "totalBytes": 1231,
+        "usedBytes": 750,
+        "unusedBytes": 481,
+        "unusedPercent": 39
+      },
+      {
+        "url": "https://www.hoher-darsberg.de/home",
+        "totalBytes": 809,
+        "usedBytes": 755,
+        "unusedBytes": 54,
+        "unusedPercent": 7
+      },
+      {
+        "url": "https://www.hoher-darsberg.de/home",
+        "totalBytes": 62,
+        "usedBytes": 0,
+        "unusedBytes": 62,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.hoher-darsberg.de/home",
+        "totalBytes": 715,
+        "usedBytes": 682,
+        "unusedBytes": 33,
+        "unusedPercent": 5
+      },
+      {
+        "url": "https://www.hoher-darsberg.de/home",
+        "totalBytes": 809,
+        "usedBytes": 776,
+        "unusedBytes": 33,
+        "unusedPercent": 4
+      },
+      {
+        "url": "https://www.hoher-darsberg.de/home",
+        "totalBytes": 715,
+        "usedBytes": 682,
+        "unusedBytes": 33,
+        "unusedPercent": 5
+      },
+      {
+        "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.code/347f202b-ba60-4ee5-9fe3-955bc3e918c9_564/website.components.code.styles.css",
+        "totalBytes": 115,
+        "usedBytes": 0,
+        "unusedBytes": 115,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.hoher-darsberg.de/home",
+        "totalBytes": 2024,
+        "usedBytes": 1841,
+        "unusedBytes": 183,
+        "unusedPercent": 9
+      },
+      {
+        "url": "https://www.hoher-darsberg.de/home",
+        "totalBytes": 12,
+        "usedBytes": 0,
+        "unusedBytes": 12,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.hoher-darsberg.de/home",
+        "totalBytes": 12,
+        "usedBytes": 0,
+        "unusedBytes": 12,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.hoher-darsberg.de/home",
+        "totalBytes": 12,
+        "usedBytes": 0,
+        "unusedBytes": 12,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.hoher-darsberg.de/home",
+        "totalBytes": 62,
+        "usedBytes": 0,
+        "unusedBytes": 62,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.hoher-darsberg.de/home",
+        "totalBytes": 670,
+        "usedBytes": 637,
+        "unusedBytes": 33,
+        "unusedPercent": 5
+      },
+      {
+        "url": "https://www.hoher-darsberg.de/home",
+        "totalBytes": 12,
+        "usedBytes": 0,
+        "unusedBytes": 12,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.hoher-darsberg.de/home",
+        "totalBytes": 2708,
+        "usedBytes": 2288,
+        "unusedBytes": 420,
+        "unusedPercent": 16
+      },
+      {
+        "url": "https://www.hoher-darsberg.de/home",
+        "totalBytes": 12,
+        "usedBytes": 0,
+        "unusedBytes": 12,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.hoher-darsberg.de/home",
+        "totalBytes": 12,
+        "usedBytes": 0,
+        "unusedBytes": 12,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.hoher-darsberg.de/home",
+        "totalBytes": 417,
+        "usedBytes": 0,
+        "unusedBytes": 417,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://static1.squarespace.com/static/vta/5c5a519771c10ba3470d8101/versioned-assets/1778089882207-IV5GHHG20Y02RIG1FE1F/static.css",
+        "totalBytes": 443568,
+        "usedBytes": 13269,
+        "unusedBytes": 430299,
+        "unusedPercent": 97
+      },
+      {
+        "url": "https://static1.squarespace.com/static/versioned-site-css/675a1f91a5ecca0513671f93/57/5c5a519771c10ba3470d8101/675a1f92a5ecca0513671f9b/1780/site.css?nocustom=true",
+        "totalBytes": 1249590,
+        "usedBytes": 198113,
+        "unusedBytes": 1051477,
+        "unusedPercent": 84
+      },
+      {
+        "url": "https://www.hoher-darsberg.de/home",
+        "totalBytes": 839,
+        "usedBytes": 785,
+        "unusedBytes": 54,
+        "unusedPercent": 6
+      },
+      {
+        "url": "https://www.hoher-darsberg.de/home",
+        "totalBytes": 12,
+        "usedBytes": 0,
+        "unusedBytes": 12,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.hoher-darsberg.de/home",
+        "totalBytes": 869,
+        "usedBytes": 815,
+        "unusedBytes": 54,
+        "unusedPercent": 6
+      },
+      {
+        "url": "https://www.hoher-darsberg.de/home",
+        "totalBytes": 393,
+        "usedBytes": 0,
+        "unusedBytes": 393,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.hoher-darsberg.de/home",
+        "totalBytes": 12,
+        "usedBytes": 0,
+        "unusedBytes": 12,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.hoher-darsberg.de/home",
+        "totalBytes": 809,
+        "usedBytes": 755,
+        "unusedBytes": 54,
+        "unusedPercent": 7
+      },
+      {
+        "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.socialLinks/b6136637-d296-4b32-bf80-9b2c16e60308_296/website.components.socialLinks.styles.css",
+        "totalBytes": 30584,
+        "usedBytes": 3013,
+        "unusedBytes": 27571,
+        "unusedPercent": 90
+      },
+      {
+        "url": "https://cdn.jsdelivr.net/gh/willmyerscode/random-sections@1/random-sections.min.css",
+        "totalBytes": 1162,
+        "usedBytes": 199,
+        "unusedBytes": 963,
+        "unusedPercent": 83
+      },
+      {
+        "url": "https://www.hoher-darsberg.de/home",
+        "totalBytes": 808,
+        "usedBytes": 754,
+        "unusedBytes": 54,
+        "unusedPercent": 7
+      },
+      {
+        "url": "https://www.hoher-darsberg.de/home",
+        "totalBytes": 393,
+        "usedBytes": 0,
+        "unusedBytes": 393,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.hoher-darsberg.de/home",
+        "totalBytes": 809,
+        "usedBytes": 755,
+        "unusedBytes": 54,
+        "unusedPercent": 7
+      },
+      {
+        "url": "https://www.hoher-darsberg.de/home",
+        "totalBytes": 12,
+        "usedBytes": 0,
+        "unusedBytes": 12,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.hoher-darsberg.de/home",
+        "totalBytes": 12,
+        "usedBytes": 0,
+        "unusedBytes": 12,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.hoher-darsberg.de/home",
+        "totalBytes": 869,
+        "usedBytes": 815,
+        "unusedBytes": 54,
+        "unusedPercent": 6
+      },
+      {
+        "url": "https://www.hoher-darsberg.de/home",
+        "totalBytes": 809,
+        "usedBytes": 755,
+        "unusedBytes": 54,
+        "unusedPercent": 7
+      },
+      {
+        "url": "https://www.hoher-darsberg.de/home",
+        "totalBytes": 12,
+        "usedBytes": 0,
+        "unusedBytes": 12,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.hoher-darsberg.de/home",
+        "totalBytes": 12,
+        "usedBytes": 0,
+        "unusedBytes": 12,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.hoher-darsberg.de/home",
+        "totalBytes": 12,
+        "usedBytes": 0,
+        "unusedBytes": 12,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.hoher-darsberg.de/home",
+        "totalBytes": 869,
+        "usedBytes": 815,
+        "unusedBytes": 54,
+        "unusedPercent": 6
+      },
+      {
+        "url": "https://www.hoher-darsberg.de/home",
+        "totalBytes": 12,
+        "usedBytes": 0,
+        "unusedBytes": 12,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.hoher-darsberg.de/home",
+        "totalBytes": 12,
+        "usedBytes": 0,
+        "unusedBytes": 12,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.hoher-darsberg.de/home",
+        "totalBytes": 393,
+        "usedBytes": 0,
+        "unusedBytes": 393,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.hoher-darsberg.de/home",
+        "totalBytes": 781,
+        "usedBytes": 748,
+        "unusedBytes": 33,
+        "unusedPercent": 4
+      },
+      {
+        "url": "https://www.hoher-darsberg.de/home",
+        "totalBytes": 417,
+        "usedBytes": 0,
+        "unusedBytes": 417,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.hoher-darsberg.de/home",
+        "totalBytes": 191,
+        "usedBytes": 0,
+        "unusedBytes": 191,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.hoher-darsberg.de/home",
+        "totalBytes": 715,
+        "usedBytes": 682,
+        "unusedBytes": 33,
+        "unusedPercent": 5
+      },
+      {
+        "url": "https://www.hoher-darsberg.de/home",
+        "totalBytes": 715,
+        "usedBytes": 682,
+        "unusedBytes": 33,
+        "unusedPercent": 5
+      },
+      {
+        "url": "https://www.hoher-darsberg.de/home",
+        "totalBytes": 869,
+        "usedBytes": 815,
+        "unusedBytes": 54,
+        "unusedPercent": 6
+      },
+      {
+        "url": "https://www.hoher-darsberg.de/home",
+        "totalBytes": 4642,
+        "usedBytes": 3723,
+        "unusedBytes": 919,
+        "unusedPercent": 20
+      },
+      {
+        "url": "https://www.hoher-darsberg.de/home",
+        "totalBytes": 2707,
+        "usedBytes": 2287,
+        "unusedBytes": 420,
+        "unusedPercent": 16
+      },
+      {
+        "url": "https://www.hoher-darsberg.de/home",
+        "totalBytes": 12,
+        "usedBytes": 0,
+        "unusedBytes": 12,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.hoher-darsberg.de/home",
+        "totalBytes": 12,
+        "usedBytes": 0,
+        "unusedBytes": 12,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.hoher-darsberg.de/home",
+        "totalBytes": 644,
+        "usedBytes": 263,
+        "unusedBytes": 381,
+        "unusedPercent": 59
+      },
+      {
+        "url": "https://www.hoher-darsberg.de/home",
+        "totalBytes": 96,
+        "usedBytes": 0,
+        "unusedBytes": 96,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://www.hoher-darsberg.de/home",
+        "totalBytes": 157,
+        "usedBytes": 0,
+        "unusedBytes": 157,
+        "unusedPercent": 100
+      },
+      {
+        "url": "https://assets.squarespace.com/universal/styles-compressed/e237edef00ae5990-min.en-US.css",
+        "totalBytes": 13228,
+        "usedBytes": 972,
+        "unusedBytes": 12256,
+        "unusedPercent": 93
+      },
+      {
+        "url": "https://assets.squarespace.com/universal/styles-compressed/popup-overlay-b742b752f5880972-min.en-US.css",
+        "totalBytes": 8413,
+        "usedBytes": 595,
+        "unusedBytes": 7818,
+        "unusedPercent": 93
+      },
+      {
+        "url": "https://assets.squarespace.com/universal/styles-compressed/6d80fa01db20c41f-min.en-US.css",
+        "totalBytes": 19753,
+        "usedBytes": 92,
+        "unusedBytes": 19661,
+        "unusedPercent": 100
+      }
+    ],
+    "totalBytes": 1884051,
+    "usedBytes": 278507,
+    "unusedBytes": 1605544,
+    "unusedPercent": 85,
+    "importantCount": 825,
+    "duplicates": 16391,
+    "vendorPrefixes": {
+      "webkit": 423,
+      "moz": 88,
+      "ms": 155,
+      "o": 8
+    },
+    "keyframes": [
+      {
+        "name": "loading-indicator-rotate-spinner",
+        "steps": 1
+      },
+      {
+        "name": "loading-indicator-dash",
+        "steps": 3
+      }
+    ],
+    "specificity": {
+      "max": [
+        2,
+        12,
+        19
+      ],
+      "average": [
+        0.03,
+        3.35,
+        0.31
+      ],
+      "count": 10443
+    },
+    "issues": [
+      "825 !important rules",
+      "16391 duplicate declarations",
+      "85% unused CSS"
+    ]
+  }
+}

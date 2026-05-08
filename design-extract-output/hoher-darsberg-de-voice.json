@@ -1,0 +1,118 @@
+{
+  "tone": "friendly",
+  "pronoun": "third-person",
+  "headingStyle": "Title Case",
+  "headingLengthClass": "verbose",
+  "ctaVerbs": [
+    {
+      "value": "wir",
+      "count": 4
+    },
+    {
+      "value": "kontakt",
+      "count": 3
+    },
+    {
+      "value": "akzeptieren",
+      "count": 2
+    },
+    {
+      "value": "ablehnen",
+      "count": 1
+    },
+    {
+      "value": "auswahl",
+      "count": 1
+    },
+    {
+      "value": "skip",
+      "count": 1
+    },
+    {
+      "value": "highlights",
+      "count": 1
+    },
+    {
+      "value": "play",
+      "count": 1
+    },
+    {
+      "value": "mute",
+      "count": 1
+    },
+    {
+      "value": "settings",
+      "count": 1
+    }
+  ],
+  "buttonPatterns": [
+    {
+      "value": "wir & unser team",
+      "count": 3
+    },
+    {
+      "value": "kontakt aufnehmen",
+      "count": 3
+    },
+    {
+      "value": "wir verwenden cookies, um ihnen das bestmögliche erlebnis zu bieten. mit der nutzung dieser website erklären sie sich damit einverstanden.\nmehr erfahren\n\nakzept",
+      "count": 1
+    },
+    {
+      "value": "akzeptieren\nablehnen\nauswahl",
+      "count": 1
+    },
+    {
+      "value": "akzeptieren",
+      "count": 1
+    },
+    {
+      "value": "ablehnen",
+      "count": 1
+    },
+    {
+      "value": "auswahl",
+      "count": 1
+    },
+    {
+      "value": "skip to content",
+      "count": 1
+    },
+    {
+      "value": "highlights",
+      "count": 1
+    },
+    {
+      "value": "play",
+      "count": 1
+    },
+    {
+      "value": "mute",
+      "count": 1
+    },
+    {
+      "value": "settings",
+      "count": 1
+    },
+    {
+      "value": "enter fullscreen",
+      "count": 1
+    }
+  ],
+  "sampleHeadings": [
+    "Hier wird aus einem\n“JA” ein ”FÜR IMMER”  ",
+    "Eure Liebe,\nunser Herzblut",
+    "EIN ORT\nFÜR JUBELNDE HERZEN",
+    "Lernt schon jetzt den Hohen Darsberg über unseren\nVirtuellen Rundgang näher kennen! ",
+    "Der Hohe Darsberg macht Euch neugierig?\nKommt doch einfach mal vorbei! ",
+    "Hier wird aus einem\n“JA” ein ”FÜR IMMER”  ",
+    "Eure Liebe,\nunser Herzblut",
+    "EIN ORT\nFÜR JUBELNDE HERZEN",
+    "Lernt schon jetzt den Hohen Darsberg über unseren\nVirtuellen Rundgang näher kennen! ",
+    "Der Hohe Darsberg macht Euch neugierig?\nKommt doch einfach mal vorbei! "
+  ],
+  "stats": {
+    "buttons": 17,
+    "headings": 10
+  }
+}

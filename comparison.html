@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vorher / Nachher — Schloss Burgpreppach Redesign</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: #111;
+      color: #fff;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 16px 28px;
+      background: #1a1a1a;
+      border-bottom: 1px solid #2a2a2a;
+      flex-shrink: 0;
+      gap: 20px;
+    }
+
+    header h1 {
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: #888;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 6px 14px;
+      border-radius: 2px;
+    }
+
+    .badge-before { background: #2a2a2a; color: #888; }
+    .badge-after  { background: #b8975c22; color: #b8975c; border: 1px solid #b8975c44; }
+
+    .split {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      flex: 1;
+      gap: 2px;
+      overflow: hidden;
+    }
+
+    .pane {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .pane-label {
+      position: absolute;
+      top: 16px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 10;
+      padding: 6px 18px;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      border-radius: 2px;
+      pointer-events: none;
+      white-space: nowrap;
+    }
+
+    .pane-label--before {
+      background: rgba(40,40,40,0.95);
+      color: #888;
+      border: 1px solid #333;
+    }
+
+    .pane-label--after {
+      background: rgba(184,151,92,0.12);
+      color: #b8975c;
+      border: 1px solid rgba(184,151,92,0.35);
+      backdrop-filter: blur(4px);
+    }
+
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+      display: block;
+    }
+
+    .pane--before { background: #1e1e1e; }
+    .pane--after  { background: #f4f0ea; }
+
+    .pane--before iframe {
+      filter: grayscale(0.15);
+    }
+
+    .divider-line {
+      width: 2px;
+      background: #2a2a2a;
+      flex-shrink: 0;
+    }
+
+    .note {
+      font-size: 11px;
+      color: #555;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Schloss Burgpreppach — Redesign</h1>
+    <div style="display:flex;align-items:center;gap:12px;">
+      <span class="badge badge-before">Vorher</span>
+      <span style="color:#333;font-size:18px;">→</span>
+      <span class="badge badge-after">Nachher</span>
+    </div>
+    <p class="note">Design-Sprache: Hoher Darsberg · Zielgruppe: Luxus-Hochzeitspaare Unterfranken</p>
+  </header>
+
+  <div class="split">
+    <div class="pane pane--before">
+      <div class="pane-label pane-label--before">Vorher</div>
+      <iframe src="https://www.schloss-burgpreppach.de/" title="Original Website"></iframe>
+    </div>
+
+    <div class="pane pane--after">
+      <div class="pane-label pane-label--after">Nachher</div>
+      <iframe src="./new-design.html" title="Neues Design"></iframe>
+    </div>
+  </div>
+
+</body>
+</html>

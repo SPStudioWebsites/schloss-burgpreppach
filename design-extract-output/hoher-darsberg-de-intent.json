@@ -1,0 +1,397 @@
+{
+  "pageIntent": {
+    "type": "blog-post",
+    "confidence": 0.35,
+    "path": "/home",
+    "title": "HOME — HOHER DARSBERG",
+    "description": "",
+    "signals": [
+      {
+        "kind": "dom",
+        "type": "blog-post",
+        "weight": 0.35,
+        "detail": "byline|min-read"
+      }
+    ],
+    "alternates": [],
+    "needsSmart": true
+  },
+  "sectionRoles": {
+    "sections": [
+      {
+        "index": 0,
+        "tag": "section",
+        "role": "content",
+        "subrole": null,
+        "confidence": 0.3,
+        "heading": null,
+        "bounds": {
+          "x": 20,
+          "y": 605.4375,
+          "w": 360,
+          "h": 174.5625
+        },
+        "buttonCount": 4,
+        "cardCount": 0,
+        "slots": {
+          "ctaCount": 4,
+          "lede": "Wir verwenden Cookies, um Ihnen das bestmögliche Erlebnis zu bieten. Mit der Nutzung dieser Website erklären Sie sich damit einverstanden.\nMEHR ERFAHREN"
+        },
+        "needsSmart": true
+      },
+      {
+        "index": 1,
+        "tag": "header",
+        "role": "nav",
+        "subrole": null,
+        "confidence": 0.4,
+        "heading": null,
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "w": 1280,
+          "h": 68.28125
+        },
+        "buttonCount": 5,
+        "cardCount": 67,
+        "slots": {
+          "ctaCount": 5,
+          "lede": "SKIP TO CONTENT\nHOHER DARSBERG\nHOME\nÜBER UNS\nHIGHLIGHTS\nGÄSTEHAUS\nDIENSTLEISTER\nSIMPLE BUT ELEGANT\nKONTAKT"
+        },
+        "needsSmart": true
+      },
+      {
+        "index": 2,
+        "tag": "nav",
+        "role": "nav",
+        "subrole": null,
+        "confidence": 0.9,
+        "heading": null,
+        "bounds": {
+          "x": 437.4375,
+          "y": 15.359375,
+          "w": 407.125,
+          "h": 37.5625
+        },
+        "buttonCount": 1,
+        "cardCount": 19,
+        "slots": {
+          "ctaCount": 1,
+          "lede": "HOME\nÜBER UNS\nHIGHLIGHTS\nGÄSTEHAUS\nDIENSTLEISTER\nSIMPLE BUT ELEGANT\nKONTAKT"
+        },
+        "needsSmart": false
+      },
+      {
+        "index": 3,
+        "tag": "nav",
+        "role": "nav",
+        "subrole": null,
+        "confidence": 0.9,
+        "heading": null,
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0
+        },
+        "buttonCount": 1,
+        "cardCount": 19,
+        "slots": {
+          "ctaCount": 1,
+          "lede": ""
+        },
+        "needsSmart": false
+      },
+      {
+        "index": 4,
+        "tag": "nav",
+        "role": "nav",
+        "subrole": null,
+        "confidence": 0.9,
+        "heading": null,
+        "bounds": {
+          "x": 0,
+          "y": 88.28125,
+          "w": 1280,
+          "h": 731.71875
+        },
+        "buttonCount": 0,
+        "cardCount": 27,
+        "slots": {},
+        "needsSmart": false
+      },
+      {
+        "index": 5,
+        "tag": "main",
+        "role": "content",
+        "subrole": null,
+        "confidence": 0.3,
+        "heading": "Hier wird aus einem\n“JA” ein ”FÜR IMMER”  ",
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "w": 1280,
+          "h": 6084.0625
+        },
+        "buttonCount": 23,
+        "cardCount": 7,
+        "slots": {
+          "heading": "Hier wird aus einem\n“JA” ein ”FÜR IMMER”  ",
+          "subheadings": [
+            "Eure Liebe,\nunser Herzblut",
+            "EIN ORT\nFÜR JUBELNDE HERZEN",
+            "Lernt schon jetzt den Hohen Darsberg über unseren\nVirtuellen Rundgang näher kennen! ",
+            "Der Hohe Darsberg macht Euch neugierig?\nKommt doch einfach mal vorbei! "
+          ],
+          "ctaCount": 23,
+          "lede": "WILLKOMMEN AUF DEM HOHEN DARSBERG\nHier wird aus einem\n“JA” ein ”FÜR IMMER”"
+        },
+        "needsSmart": true
+      },
+      {
+        "index": 6,
+        "tag": "section",
+        "role": "content",
+        "subrole": null,
+        "confidence": 0.3,
+        "heading": null,
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "w": 1280,
+          "h": 800
+        },
+        "buttonCount": 0,
+        "cardCount": 0,
+        "slots": {},
+        "needsSmart": true
+      },
+      {
+        "index": 7,
+        "tag": "section",
+        "role": "content",
+        "subrole": null,
+        "confidence": 0.3,
+        "heading": "Hier wird aus einem\n“JA” ein ”FÜR IMMER”  ",
+        "bounds": {
+          "x": 0,
+          "y": 800,
+          "w": 1280,
+          "h": 594
+        },
+        "buttonCount": 0,
+        "cardCount": 0,
+        "slots": {
+          "heading": "Hier wird aus einem\n“JA” ein ”FÜR IMMER”  ",
+          "lede": "WILLKOMMEN AUF DEM HOHEN DARSBERG\nHier wird aus einem\n“JA” ein ”FÜR IMMER”"
+        },
+        "needsSmart": true
+      },
+      {
+        "index": 8,
+        "tag": "section",
+        "role": "content",
+        "subrole": null,
+        "confidence": 0.3,
+        "heading": null,
+        "bounds": {
+          "x": 0,
+          "y": 1394,
+          "w": 1280,
+          "h": 272
+        },
+        "buttonCount": 0,
+        "cardCount": 0,
+        "slots": {},
+        "needsSmart": true
+      },
+      {
+        "index": 9,
+        "tag": "section",
+        "role": "hero",
+        "subrole": null,
+        "confidence": 0.4,
+        "heading": "Eure Liebe,\nunser Herzblut",
+        "bounds": {
+          "x": 0,
+          "y": 1666,
+          "w": 1280,
+          "h": 682.671875
+        },
+        "buttonCount": 5,
+        "cardCount": 0,
+        "slots": {
+          "heading": "Eure Liebe,\nunser Herzblut",
+          "ctaCount": 5
+        },
+        "needsSmart": true
+      },
+      {
+        "index": 10,
+        "tag": "section",
+        "role": "content",
+        "subrole": null,
+        "confidence": 0.3,
+        "heading": "EIN ORT\nFÜR JUBELNDE HERZEN",
+        "bounds": {
+          "x": 0,
+          "y": 2348.671875,
+          "w": 1280,
+          "h": 1463.375
+        },
+        "buttonCount": 0,
+        "cardCount": 0,
+        "slots": {
+          "heading": "EIN ORT\nFÜR JUBELNDE HERZEN"
+        },
+        "needsSmart": true
+      },
+      {
+        "index": 11,
+        "tag": "section",
+        "role": "content",
+        "subrole": null,
+        "confidence": 0.3,
+        "heading": null,
+        "bounds": {
+          "x": 0,
+          "y": 3812.046875,
+          "w": 1280,
+          "h": 843.9375
+        },
+        "buttonCount": 13,
+        "cardCount": 6,
+        "slots": {
+          "ctaCount": 13,
+          "lede": "Play\n00:00\n08:11\nMute\nSettings\nEnter fullscreen\n00:00"
+        },
+        "needsSmart": true
+      },
+      {
+        "index": 12,
+        "tag": "section",
+        "role": "content",
+        "subrole": null,
+        "confidence": 0.3,
+        "heading": "Lernt schon jetzt den Hohen Darsberg über unseren\nVirtuellen Rundgang näher kennen! ",
+        "bounds": {
+          "x": 0,
+          "y": 4655.984375,
+          "w": 1280,
+          "h": 591.3125
+        },
+        "buttonCount": 0,
+        "cardCount": 0,
+        "slots": {
+          "heading": "Lernt schon jetzt den Hohen Darsberg über unseren\nVirtuellen Rundgang näher kennen! "
+        },
+        "needsSmart": true
+      },
+      {
+        "index": 13,
+        "tag": "section",
+        "role": "hero",
+        "subrole": null,
+        "confidence": 0.4,
+        "heading": "Der Hohe Darsberg macht Euch neugierig?\nKommt doch einfach mal vorbei! ",
+        "bounds": {
+          "x": 0,
+          "y": 5247.296875,
+          "w": 1280,
+          "h": 836.765625
+        },
+        "buttonCount": 5,
+        "cardCount": 0,
+        "slots": {
+          "heading": "Der Hohe Darsberg macht Euch neugierig?\nKommt doch einfach mal vorbei! ",
+          "ctaCount": 5,
+          "lede": "Der Hohe Darsberg macht Euch neugierig?\nKommt doch einfach mal vorbei! \nKONTAKT AUFNEHMEN"
+        },
+        "needsSmart": true
+      },
+      {
+        "index": 14,
+        "tag": "footer",
+        "role": "footer",
+        "subrole": null,
+        "confidence": 0.95,
+        "heading": null,
+        "bounds": {
+          "x": 0,
+          "y": 6084.0625,
+          "w": 1280,
+          "h": 206.875
+        },
+        "buttonCount": 0,
+        "cardCount": 0,
+        "slots": {
+          "lede": "ZURÜCK NACH OBEN"
+        },
+        "needsSmart": false
+      },
+      {
+        "index": 15,
+        "tag": "section",
+        "role": "content",
+        "subrole": null,
+        "confidence": 0.3,
+        "heading": null,
+        "bounds": {
+          "x": 0,
+          "y": 6084.0625,
+          "w": 1280,
+          "h": 206.875
+        },
+        "buttonCount": 0,
+        "cardCount": 0,
+        "slots": {
+          "lede": "ZURÜCK NACH OBEN"
+        },
+        "needsSmart": true
+      },
+      {
+        "index": 16,
+        "tag": "nav",
+        "role": "nav",
+        "subrole": null,
+        "confidence": 0.9,
+        "heading": null,
+        "bounds": {
+          "x": 539.71875,
+          "y": 6187.5,
+          "w": 200.5625,
+          "h": 20
+        },
+        "buttonCount": 0,
+        "cardCount": 0,
+        "slots": {},
+        "needsSmart": false
+      }
+    ],
+    "counts": {
+      "content": 9,
+      "nav": 5,
+      "hero": 2,
+      "footer": 1
+    },
+    "readingOrder": [
+      "nav",
+      "nav",
+      "content",
+      "content",
+      "nav",
+      "nav",
+      "content",
+      "content",
+      "content",
+      "hero",
+      "content",
+      "content",
+      "content",
+      "hero",
+      "footer",
+      "content",
+      "nav"
+    ]
+  }
+}

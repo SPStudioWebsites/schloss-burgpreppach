@@ -1,0 +1,57 @@
+{
+  "openGraph": {
+    "site_name": "HOHER DARSBERG",
+    "title": "HOME — HOHER DARSBERG",
+    "url": "https://www.hoher-darsberg.de/home",
+    "type": "website",
+    "image": "http://static1.squarespace.com/static/675a1f91a5ecca0513671f93/t/67b470a5e9cf125daf99aa25/1739878565757/Bildschirmfoto+2024-12-19+um+11.26.45.png?format=1500w",
+    "image:width": "1500",
+    "image:height": "801"
+  },
+  "twitter": {
+    "title": "HOME — HOHER DARSBERG",
+    "image": "http://static1.squarespace.com/static/675a1f91a5ecca0513671f93/t/67b470a5e9cf125daf99aa25/1739878565757/Bildschirmfoto+2024-12-19+um+11.26.45.png?format=1500w",
+    "url": "https://www.hoher-darsberg.de/home",
+    "card": "summary"
+  },
+  "description": "",
+  "canonical": null,
+  "themeColor": null,
+  "viewport": "width=device-width, initial-scale=1",
+  "favicons": [
+    {
+      "rel": "icon",
+      "href": "https://images.squarespace-cdn.com/content/v1/675a1f91a5ecca0513671f93/979044ac-ffa2-44db-a033-99d29995ecbb/favicon.ico?format=100w",
+      "sizes": "",
+      "type": "image/x-icon"
+    },
+    {
+      "rel": "icon",
+      "href": "https://images.squarespace-cdn.com/content/v1/675a1f91a5ecca0513671f93/b21c9c3d-3cdd-4c60-b39e-c7ff87d98d54/favicon.ico?format=100w",
+      "sizes": "",
+      "type": "image/x-icon"
+    }
+  ],
+  "manifest": null,
+  "structuredData": [
+    {
+      "type": "WebSite",
+      "name": "HOHER DARSBERG",
+      "sample": "{\"url\":\"https://www.hoher-darsberg.de\",\"name\":\"HOHER DARSBERG\",\"@context\":\"http://schema.org\",\"@type\":\"WebSite\"}"
+    },
+    {
+      "type": "LocalBusiness",
+      "name": null,
+      "sample": "{\"address\":\"\",\"openingHours\":\"\",\"@context\":\"http://schema.org\",\"@type\":\"LocalBusiness\"}"
+    }
+  ],
+  "score": {
+    "hasOg": true,
+    "hasTwitter": true,
+    "hasDescription": false,
+    "hasCanonical": false,
+    "hasStructuredData": true,
+    "hasFavicon": true,
+    "hasThemeColor": false
+  }
+}

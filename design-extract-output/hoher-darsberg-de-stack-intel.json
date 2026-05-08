@@ -1,0 +1,12 @@
+{
+  "cms": [
+    "webflow",
+    "squarespace"
+  ],
+  "analytics": [],
+  "experimentation": [],
+  "signals": {
+    "scriptCount": 32,
+    "metaCount": 13
+  }
+}
