@@ -1,7 +1,7 @@
 {
-  "buildCommand": null,
+  "buildCommand": "",
   "outputDirectory": ".",
-  "installCommand": null,
+  "installCommand": "",
   "rewrites": [
     { "source": "/", "destination": "/new-design.html" }
   ]
