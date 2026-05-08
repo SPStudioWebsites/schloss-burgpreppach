@@ -381,7 +381,6 @@
       z-index: 2;
     }
 
-    /* Akt 1 startet sichtbar */
     #heroContent { opacity: 1; pointer-events: auto; }
 
     /* Akt 2 */
@@ -1783,13 +1782,17 @@
   </footer>
 
   <!-- ─── GSAP + Lenis ─────────────────────────────────────────────────── -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.15.0/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.15.0/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
   <script src="https://unpkg.com/lenis@1.3.23/dist/lenis.min.js"></script>
 
   <!-- ─── Scripts ───────────────────────────────────────────────────────── -->
   <script>
     gsap.registerPlugin(ScrollTrigger);
+
+    // Browser-Scroll-Wiederherstellung deaktivieren → immer von oben starten
+    if (history.scrollRestoration) history.scrollRestoration = 'manual';
+    window.scrollTo(0, 0);
 
     // ── Lenis Smooth Scroll ──────────────────────────────────────────────
     // Lenis v1: kein scrollerProxy nötig — Lenis schreibt window.scrollY
@@ -1813,84 +1816,58 @@
       });
     });
 
-    // ── Video Scrubbing ──────────────────────────────────────────────────
-    const video = document.getElementById('heroVideo');
-
-    // Prevent autoplay — we control playback manually
-    video.pause();
-
-    // Once enough data is loaded, set up the scrub
-    function initScrub() {
-      // RAF throttle — browser decodes one frame per rAF, not per scroll tick
-      let targetTime = 0;
-      let rafPending = false;
-
-      function seekVideo() {
-        video.currentTime = targetTime;
-        rafPending = false;
-      }
-
-      ScrollTrigger.create({
-        trigger: '.hero-wrapper',
-        start: 'top top',
-        end: 'bottom bottom',
-        scrub: true,                    // immediate — no catch-up lag
-        onUpdate: (self) => {
-          const t = self.progress * video.duration;
-          if (!isFinite(t)) return;
-          targetTime = t;
-          if (!rafPending) {
-            rafPending = true;
-            requestAnimationFrame(seekVideo);
+    // ── Hero Text Animations (always run, no video dependency) ──────────
+    function initHeroAnimations() {
+      // ── Intro: erster Scroll → Video blur (0–5%) ────────────────────
+      gsap.fromTo('#heroVideo',
+        { filter: 'blur(0px)' },
+        {
+          filter: 'blur(6px)',
+          ease: 'none',
+          scrollTrigger: {
+            trigger: '.hero-wrapper',
+            start: 'top top',
+            end: '5% top',
+            scrub: true,
           }
         }
-      });
+      );
 
-      // ── Akt 1: 0–20% sichtbar, 20–30% fade out ──────────────────────
+      // ── Akt 1: 10–20% fade out ───────────────────────────────────────
       gsap.to('#heroContent', {
         opacity: 0,
         y: -32,
         ease: 'power2.in',
         scrollTrigger: {
           trigger: '.hero-wrapper',
-          start: '20% top',
-          end: '30% top',
+          start: '10% top',
+          end: '20% top',
           scrub: true,
         }
       });
 
-      // ── Akt 2: 28–38% fade in, 56–66% fade out ───────────────────────
-      gsap.fromTo('#heroAct2',
-        { opacity: 0, y: 40, pointerEvents: 'none' },
-        {
-          opacity: 1,
-          y: 0,
-          ease: 'power2.out',
-          scrollTrigger: {
-            trigger: '.hero-wrapper',
-            start: '28% top',
-            end: '38% top',
-            scrub: true,
-            onEnter: () => document.getElementById('heroAct2').style.pointerEvents = 'auto',
-            onLeaveBack: () => document.getElementById('heroAct2').style.pointerEvents = 'none',
-          }
-        }
-      );
-      gsap.to('#heroAct2', {
-        opacity: 0,
-        y: -32,
-        ease: 'power2.in',
+      // ── Akt 2: 18–52% Timeline (fade in 18–28, hold 28–42, fade out 42–52)
+      // Ein ScrollTrigger für den kompletten Lifecycle → kein Init-Konflikt
+      gsap.timeline({
         scrollTrigger: {
           trigger: '.hero-wrapper',
-          start: '56% top',
-          end: '66% top',
+          start: '18% top',
+          end: '52% top',
           scrub: true,
-          onLeaveBack: () => document.getElementById('heroAct2').style.pointerEvents = 'auto',
-          onEnter: () => document.getElementById('heroAct2').style.pointerEvents = 'none',
+          onEnter:      () => document.getElementById('heroAct2').style.pointerEvents = 'auto',
+          onLeaveBack:  () => document.getElementById('heroAct2').style.pointerEvents = 'none',
+          onLeave:      () => document.getElementById('heroAct2').style.pointerEvents = 'none',
+          onEnterBack:  () => document.getElementById('heroAct2').style.pointerEvents = 'auto',
         }
-      });
+      })
+      .fromTo('#heroAct2',
+        { opacity: 0, y: 40 },
+        { opacity: 1, y: 0, ease: 'power2.out', duration: 10 }   // 18–28% (10 Einheiten)
+      )
+      .to('#heroAct2', { duration: 14 })                           // 28–42% sichtbar (14 Einheiten)
+      .to('#heroAct2', { opacity: 0, y: -32, ease: 'power2.in', duration: 10 }); // 42–52%
 
-      // ── Akt 3: 64–74% fade in, bleibt bis 100% sichtbar ─────────────
+      // ── Akt 3: 50–60% fade in, bleibt bis 100% sichtbar ─────────────
       gsap.fromTo('#heroAct3',
         { opacity: 0, y: 40, pointerEvents: 'none' },
         {
@@ -1899,8 +1876,8 @@
           ease: 'power2.out',
           scrollTrigger: {
             trigger: '.hero-wrapper',
-            start: '64% top',
-            end: '74% top',
+            start: '50% top',
+            end: '60% top',
             scrub: true,
             onEnter: () => document.getElementById('heroAct3').style.pointerEvents = 'auto',
             onLeaveBack: () => document.getElementById('heroAct3').style.pointerEvents = 'none',
@@ -1914,17 +1891,49 @@
         ease: 'none',
         scrollTrigger: {
           trigger: '.hero-wrapper',
-          start: '5% top',
-          end: '15% top',
+          start: '3% top',
+          end: '10% top',
           scrub: true,
         }
       });
     }
 
+    initHeroAnimations();
+
+    // ── Video Scrubbing (gated on video metadata) ────────────────────────
+    const video = document.getElementById('heroVideo');
+    video.pause();
+
+    function initVideoScrub() {
+      let targetTime = 0;
+      let rafPending = false;
+
+      function seekVideo() {
+        video.currentTime = targetTime;
+        rafPending = false;
+      }
+
+      ScrollTrigger.create({
+        trigger: '.hero-wrapper',
+        start: 'top top',
+        end: 'bottom bottom',
+        scrub: true,
+        onUpdate: (self) => {
+          const t = self.progress * video.duration;
+          if (!isFinite(t)) return;
+          targetTime = t;
+          if (!rafPending) {
+            rafPending = true;
+            requestAnimationFrame(seekVideo);
+          }
+        }
+      });
+    }
+
     if (video.readyState >= 2) {
-      initScrub();
+      initVideoScrub();
     } else {
-      video.addEventListener('loadedmetadata', initScrub, { once: true });
+      video.addEventListener('loadedmetadata', initVideoScrub, { once: true });
     }
 
     // ScrollTrigger nach vollem Page-Load neu berechnen (Bilder, Fonts etc.)

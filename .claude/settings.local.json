@@ -10,7 +10,8 @@
       "PowerShell(git push)",
       "PowerShell(git add vercel.json)",
       "PowerShell(git commit -m \"vercel.json: disable build, set output to root for static HTML\")",
-      "Bash(git rm *)"
+      "Bash(git rm *)",
+      "WebFetch(domain:cdnjs.cloudflare.com)"
     ]
   }
 }
