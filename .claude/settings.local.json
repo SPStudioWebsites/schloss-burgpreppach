@@ -7,7 +7,9 @@
       "PowerShell(git rm -r --cached node_modules .DS_Store)",
       "PowerShell(git add .gitignore)",
       "PowerShell(git commit -m \"Remove node_modules and .DS_Store from git tracking\")",
-      "PowerShell(git push)"
+      "PowerShell(git push)",
+      "PowerShell(git add vercel.json)",
+      "PowerShell(git commit -m \"vercel.json: disable build, set output to root for static HTML\")"
     ]
   }
 }
