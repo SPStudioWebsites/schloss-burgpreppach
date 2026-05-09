@@ -2297,49 +2297,49 @@
     // ── Video: Desktop scrubbing, Mobile autoplay ────────────────────────
     const video = document.getElementById('heroVideo');
 
-    // Mobile: kleineres 480p Video laden (1.2MB statt 22MB)
     if (isMobile) {
-      video.src = './public/videos/Hero-keyinit10-mobile.mp4';
-    }
+      // Mobile: kein Video-Scrubbing — Poster-Bild + Ken-Burns-Zoom per GSAP
+      video.removeAttribute('src');
+      video.load();
 
-    function initVideoScrub() {
-      let targetTime = 0;
-      let rafPending = false;
-      let lastSeekTime = 0;
-      const minSeekInterval = isMobile ? 50 : 0; // Mobile: max 20 seeks/s
-
-      function seekVideo() {
-        const now = performance.now();
-        if (now - lastSeekTime < minSeekInterval) {
-          rafPending = false;
-          return;
+      gsap.fromTo('#heroVideo',
+        { scale: 1, transformOrigin: 'center center' },
+        {
+          scale: 1.08,
+          ease: 'none',
+          scrollTrigger: {
+            trigger: '.hero-wrapper',
+            start: 'top top',
+            end: 'bottom bottom',
+            scrub: true,
+          }
         }
-        video.currentTime = targetTime;
-        lastSeekTime = now;
-        rafPending = false;
+      );
+    } else {
+      function initVideoScrub() {
+        let targetTime = 0;
+        let rafPending = false;
+        function seekVideo() { video.currentTime = targetTime; rafPending = false; }
+
+        ScrollTrigger.create({
+          trigger: '.hero-wrapper', start: 'top top', end: 'bottom bottom', scrub: true,
+          onUpdate: (self) => {
+            const t = self.progress * video.duration;
+            if (!isFinite(t)) return;
+            targetTime = t;
+            if (!rafPending) { rafPending = true; requestAnimationFrame(seekVideo); }
+          }
+        });
       }
 
-      ScrollTrigger.create({
-        trigger: '.hero-wrapper', start: 'top top', end: 'bottom bottom', scrub: true,
-        onUpdate: (self) => {
-          const t = self.progress * video.duration;
-          if (!isFinite(t)) return;
-          targetTime = t;
-          if (!rafPending) { rafPending = true; requestAnimationFrame(seekVideo); }
-        }
-      });
-    }
+      if (video.readyState >= 2) initVideoScrub();
+      else video.addEventListener('loadedmetadata', initVideoScrub, { once: true });
 
-    if (video.readyState >= 2) {
-      initVideoScrub();
-    } else {
-      video.addEventListener('loadedmetadata', initVideoScrub, { once: true });
+      video.play().then(() => {
+        video.pause();
+        video.currentTime = 0;
+      }).catch(() => {});
     }
-
-    video.play().then(() => {
-      video.pause();
-      video.currentTime = 0;
-    }).catch(() => {});
 
     window.addEventListener('load', () => ScrollTrigger.refresh());
 
