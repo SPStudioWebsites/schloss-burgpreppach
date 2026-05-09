@@ -51,6 +51,45 @@
 
     html { overflow-x: clip; color-scheme: light; }
 
+    /* ─── Demo Banner ────────────────────────────────────────────────── */
+    .demo-banner {
+      background: #1a1a1a;
+      color: #fff;
+      text-align: center;
+      padding: 10px 24px;
+      font-family: var(--font-body);
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 1.6;
+      letter-spacing: 0.03em;
+      position: relative;
+      z-index: 200;
+    }
+
+    .demo-banner strong {
+      color: #f5c842;
+      font-weight: 600;
+    }
+
+    .demo-banner a {
+      color: rgba(255,255,255,0.6);
+      text-decoration: underline;
+    }
+
+    .demo-banner-footer {
+      background: #111;
+      color: rgba(255,255,255,0.55);
+      text-align: center;
+      padding: 20px 24px;
+      font-family: var(--font-body);
+      font-size: 11px;
+      font-weight: 300;
+      line-height: 1.8;
+      letter-spacing: 0.03em;
+    }
+
+    .demo-banner-footer strong { color: rgba(255,255,255,0.8); font-weight: 500; }
+
     img {
       display: block;
       width: 100%;
@@ -1489,6 +1528,12 @@
 </head>
 <body>
 
+  <!-- ─── Demo Banner (oben) ───────────────────────────────────────────── -->
+  <div class="demo-banner">
+    <strong>⚠ Demo-Seite</strong> &mdash; Diese Website ist ein nicht beauftragtes Konzept-Redesign und steht in keiner Verbindung zu Schloss Burgpreppach oder der Familie Fuchs von Bimbach.
+    Alle Inhalte, Bilder und Angaben dienen ausschließlich zu Demonstrationszwecken.
+  </div>
+
   <!-- ─── Nav ──────────────────────────────────────────────────────────── -->
   <nav class="nav" id="nav">
     <a href="#" class="nav-logo">Schloss Burgpreppach</a>
@@ -2109,6 +2154,18 @@
       </div>
     </div>
   </footer>
+
+  <!-- ─── Demo Disclaimer (unten) ─────────────────────────────────────── -->
+  <div class="demo-banner-footer">
+    <strong>Rechtlicher Hinweis &amp; Disclaimer</strong><br>
+    Diese Website ist ein nicht beauftragtes Konzept-Redesign, das ausschließlich zu Demonstrationszwecken erstellt wurde.
+    Sie steht in keiner geschäftlichen, rechtlichen oder sonstigen Verbindung zu Schloss Burgpreppach, der Familie Fuchs von Bimbach
+    oder einem damit verbundenen Unternehmen. Es besteht kein Auftragsverhältnis.<br><br>
+    Alle verwendeten Texte, Bezeichnungen und Beschreibungen sind fiktiv oder exemplarisch und stellen keine verbindlichen Aussagen dar.
+    Bilder und Medieninhalte wurden für dieses Demo-Projekt verwendet und unterliegen den jeweiligen Urheberrechten ihrer Eigentümer.
+    Eine kommerzielle Nutzung dieser Seite ist nicht gestattet.<br><br>
+    © Demo-Konzept by SPStudio Websites &mdash; Kein offizielles Angebot von Schloss Burgpreppach.
+  </div>
 
   <!-- ─── GSAP + Lenis ─────────────────────────────────────────────────── -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
