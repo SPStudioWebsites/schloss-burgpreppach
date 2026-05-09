@@ -45,11 +45,10 @@
       background: var(--ivory);
       color: var(--dark);
       -webkit-font-smoothing: antialiased;
-      overflow-x: hidden;
-      max-width: 100%;
+      overflow-x: clip;
     }
 
-    html { overflow-x: hidden; }
+    html { overflow-x: clip; }
 
     img {
       display: block;
@@ -1247,9 +1246,6 @@
 
     @media (max-width: 768px) {
       :root { --section-pad: 52px; }
-
-      /* ── Kein Horizontal-Scroll ─────────────────────────────────── */
-      *, *::before, *::after { max-width: 100%; }
 
       /* ── Hero ──────────────────────────────────────────────────── */
       .hero-wrapper { height: 220vh; }
