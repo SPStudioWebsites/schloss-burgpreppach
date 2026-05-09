@@ -1567,6 +1567,7 @@
   <section class="hero" id="hero">
     <video id="heroVideo" class="hero-video"
       src="./public/videos/Hero-keyinit10-scrub.mp4"
+      poster="./public/images/hero-poster.jpg"
       muted playsinline preload="auto"></video>
     <div class="hero-overlay"></div>
 
@@ -2296,10 +2297,27 @@
     // ── Video: Desktop scrubbing, Mobile autoplay ────────────────────────
     const video = document.getElementById('heroVideo');
 
+    // Mobile: kleineres 480p Video laden (1.2MB statt 22MB)
+    if (isMobile) {
+      video.src = './public/videos/Hero-keyinit10-mobile.mp4';
+    }
+
     function initVideoScrub() {
       let targetTime = 0;
       let rafPending = false;
-      function seekVideo() { video.currentTime = targetTime; rafPending = false; }
+      let lastSeekTime = 0;
+      const minSeekInterval = isMobile ? 50 : 0; // Mobile: max 20 seeks/s
+
+      function seekVideo() {
+        const now = performance.now();
+        if (now - lastSeekTime < minSeekInterval) {
+          rafPending = false;
+          return;
+        }
+        video.currentTime = targetTime;
+        lastSeekTime = now;
+        rafPending = false;
+      }
 
       ScrollTrigger.create({
         trigger: '.hero-wrapper', start: 'top top', end: 'bottom bottom', scrub: true,
@@ -2318,8 +2336,6 @@
       video.addEventListener('loadedmetadata', initVideoScrub, { once: true });
     }
 
-    // play→pause: zwingt Browser zur Datenladung + zeigt ersten Frame
-    // (iOS/Android ignorieren preload="auto" ohne Nutzer-Interaktion)
     video.play().then(() => {
       video.pause();
       video.currentTime = 0;
