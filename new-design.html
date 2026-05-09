@@ -2060,8 +2060,6 @@
     // ── Video: Desktop scrubbing, Mobile autoplay ────────────────────────
     const video = document.getElementById('heroVideo');
 
-    video.pause();
-
     function initVideoScrub() {
       let targetTime = 0;
       let rafPending = false;
@@ -2078,8 +2076,18 @@
       });
     }
 
-    if (video.readyState >= 2) initVideoScrub();
-    else video.addEventListener('loadedmetadata', initVideoScrub, { once: true });
+    if (video.readyState >= 2) {
+      initVideoScrub();
+    } else {
+      video.addEventListener('loadedmetadata', initVideoScrub, { once: true });
+    }
+
+    // play→pause: zwingt Browser zur Datenladung + zeigt ersten Frame
+    // (iOS/Android ignorieren preload="auto" ohne Nutzer-Interaktion)
+    video.play().then(() => {
+      video.pause();
+      video.currentTime = 0;
+    }).catch(() => {});
 
     window.addEventListener('load', () => ScrollTrigger.refresh());
 
