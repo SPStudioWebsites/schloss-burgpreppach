@@ -11,7 +11,13 @@
       "PowerShell(git add vercel.json)",
       "PowerShell(git commit -m \"vercel.json: disable build, set output to root for static HTML\")",
       "Bash(git rm *)",
-      "WebFetch(domain:cdnjs.cloudflare.com)"
+      "WebFetch(domain:cdnjs.cloudflare.com)",
+      "PowerShell(\\(Get-Item \"c:\\\\Users\\\\user\\\\meine-website\\\\webseiten-flips\\\\schloss-burgpreppach\\\\public\\\\videos\\\\Hero-keyinit10.mp4\"\\).Length / 1MB)",
+      "PowerShell(ffmpeg -version 2>&1)",
+      "PowerShell(ffprobe -v quiet -print_format json -show_streams \"c:\\\\Users\\\\user\\\\meine-website\\\\webseiten-flips\\\\schloss-burgpreppach\\\\public\\\\videos\\\\Hero-keyinit10.mp4\" 2>&1)",
+      "PowerShell(ffmpeg -i \"c:\\\\Users\\\\user\\\\meine-website\\\\webseiten-flips\\\\schloss-burgpreppach\\\\public\\\\videos\\\\Hero-keyinit10.mp4\" -vf scale=1280:720 -g 1 -crf 26 -preset fast -movflags +faststart -an \"c:\\\\Users\\\\user\\\\meine-website\\\\webseiten-flips\\\\schloss-burgpreppach\\\\public\\\\videos\\\\Hero-keyinit10-scrub.mp4\" -y 2>&1)",
+      "PowerShell(\\(Get-Item \"c:\\\\Users\\\\user\\\\meine-website\\\\webseiten-flips\\\\schloss-burgpreppach\\\\public\\\\videos\\\\Hero-keyinit10-scrub.mp4\"\\).Length / 1MB)",
+      "PowerShell(ffmpeg -i \"c:\\\\Users\\\\user\\\\meine-website\\\\webseiten-flips\\\\schloss-burgpreppach\\\\public\\\\videos\\\\Hero-keyinit10.mp4\" -g 1 -crf 18 -preset medium -movflags +faststart -an \"c:\\\\Users\\\\user\\\\meine-website\\\\webseiten-flips\\\\schloss-burgpreppach\\\\public\\\\videos\\\\Hero-keyinit10-scrub.mp4\" -y 2>&1)"
     ]
   }
 }
