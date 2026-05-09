@@ -738,145 +738,183 @@
     .leistungen {
       background: var(--dark);
       color: var(--white);
-      padding: var(--section-pad) 40px;
+      overflow: hidden;
     }
 
-    .leistungen-header {
-      text-align: center;
-      max-width: 600px;
-      margin: 0 auto 80px;
-    }
-
-    .leistungen-header .label { color: var(--gold-light); }
-
-    .leistungen-header h2 {
-      font-family: var(--font-display);
-      font-size: clamp(36px, 4.5vw, 56px);
-      font-weight: 300;
-      line-height: 1.05;
-      letter-spacing: -0.02em;
-      margin-top: 16px;
-      color: var(--white);
-    }
-
-    .leistungen-body {
+    .leistungen-intro {
+      padding: var(--section-pad) 40px 80px;
       max-width: var(--max-w);
       margin-inline: auto;
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 0;
+      gap: 80px;
+      align-items: end;
     }
 
-    /* Linke Seite: Feature-Grid */
-    .leistungen-features {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      border-top: 1px solid rgba(255,255,255,0.1);
-      border-left: 1px solid rgba(255,255,255,0.1);
-    }
+    .leistungen-intro-left .label { color: var(--gold-light); margin-bottom: 20px; }
 
-    .leistungen-feature {
-      padding: 40px 36px;
-      border-right: 1px solid rgba(255,255,255,0.1);
-      border-bottom: 1px solid rgba(255,255,255,0.1);
-      transition: background 0.3s;
-    }
-    .leistungen-feature:hover { background: rgba(255,255,255,0.03); }
-
-    .leistungen-feature-num {
+    .leistungen-intro-left h2 {
       font-family: var(--font-display);
-      font-size: 11px;
+      font-size: clamp(42px, 5.5vw, 72px);
       font-weight: 300;
-      letter-spacing: 0.2em;
-      color: var(--gold);
-      margin-bottom: 20px;
-      display: block;
-    }
-
-    .leistungen-feature-title {
-      font-family: var(--font-display);
-      font-size: 20px;
-      font-weight: 300;
+      line-height: 0.95;
+      letter-spacing: -0.03em;
       color: var(--white);
-      line-height: 1.2;
-      margin-bottom: 10px;
-      letter-spacing: -0.01em;
     }
 
-    .leistungen-feature-desc {
-      font-size: 12px;
+    .leistungen-intro-left h2 em {
+      font-style: italic;
+      color: var(--gold-light);
+    }
+
+    .leistungen-intro-right {
+      padding-bottom: 8px;
+    }
+
+    .leistungen-intro-right p {
+      font-size: 14px;
       font-weight: 300;
-      line-height: 1.75;
+      line-height: 1.95;
       color: rgba(255,255,255,0.45);
-      letter-spacing: 0.02em;
+      margin-bottom: 36px;
+      max-width: 400px;
     }
 
-    /* CTA-Kachel */
-    .leistungen-feature--cta {
+    .leistungen-item {
+      display: grid;
+      grid-template-columns: 55% 45%;
+      min-height: 440px;
+      border-top: 1px solid rgba(255,255,255,0.08);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .leistungen-item:last-child { border-bottom: 1px solid rgba(255,255,255,0.08); }
+
+    .leistungen-item--reverse { grid-template-columns: 45% 55%; }
+    .leistungen-item--reverse .leistungen-item-content { order: 2; }
+    .leistungen-item--reverse .leistungen-item-visual { order: 1; }
+
+    .leistungen-item-content {
+      padding: 60px 64px;
       display: flex;
       flex-direction: column;
-      justify-content: flex-end;
-      background: rgba(184,151,92,0.08);
-      border-color: rgba(184,151,92,0.25) !important;
+      justify-content: center;
+      position: relative;
+      z-index: 1;
     }
 
-    .leistungen-feature--cta p {
+    .leistungen-item-ghost {
+      position: absolute;
       font-family: var(--font-display);
-      font-style: italic;
-      font-size: 16px;
-      color: rgba(255,255,255,0.6);
-      line-height: 1.6;
+      font-size: clamp(140px, 18vw, 220px);
+      font-weight: 300;
+      line-height: 1;
+      color: var(--gold);
+      opacity: 0.04;
+      top: 50%;
+      left: 40px;
+      transform: translateY(-50%);
+      user-select: none;
+      pointer-events: none;
+      letter-spacing: -0.05em;
+      z-index: 0;
+    }
+
+    .leistungen-item--reverse .leistungen-item-ghost {
+      left: auto;
+      right: 40px;
+    }
+
+    .leistungen-item-tag {
+      display: flex;
+      align-items: center;
+      gap: 16px;
       margin-bottom: 28px;
     }
 
-    /* Rechte Seite: Bild */
-    .leistungen-img {
-      position: relative;
-      overflow: hidden;
-      background-color: var(--dark-mid);
-      min-height: 600px;
+    .leistungen-item-num {
+      font-family: var(--font-body);
+      font-size: 9px;
+      font-weight: 500;
+      letter-spacing: 0.25em;
+      color: var(--gold);
+      text-transform: uppercase;
     }
 
-    .leistungen-img img {
+    .leistungen-item-line {
+      flex: 1;
+      height: 1px;
+      background: linear-gradient(to right, rgba(184,151,92,0.5), transparent);
+      max-width: 60px;
+    }
+
+    .leistungen-item-title {
+      font-family: var(--font-display);
+      font-size: clamp(32px, 3.8vw, 52px);
+      font-weight: 300;
+      font-style: italic;
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+      color: var(--white);
+      margin-bottom: 20px;
+    }
+
+    .leistungen-item-desc {
+      font-size: 13px;
+      font-weight: 300;
+      line-height: 1.85;
+      color: rgba(255,255,255,0.45);
+      max-width: 340px;
+    }
+
+    .leistungen-item-visual {
+      position: relative;
+      overflow: hidden;
+      background: var(--dark-mid);
+    }
+
+    .leistungen-item-visual img {
       width: 100%;
       height: 100%;
       object-fit: cover;
       object-position: center;
-      transition: transform 0.8s var(--ease);
+      transition: transform 1s var(--ease);
+      filter: brightness(0.8) saturate(0.9);
     }
-    .leistungen-img:hover img { transform: scale(1.03); }
 
-    .leistungen-img-overlay {
+    .leistungen-item:hover .leistungen-item-visual img {
+      transform: scale(1.06);
+    }
+
+    .leistungen-item-visual-overlay {
       position: absolute;
       inset: 0;
-      background: linear-gradient(to top, rgba(20,16,12,0.7) 0%, transparent 50%);
+      background: linear-gradient(135deg, rgba(26,23,20,0.4) 0%, transparent 60%);
     }
 
-    .leistungen-img-quote {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      padding: 40px;
+    /* CTA strip am Ende */
+    .leistungen-cta-strip {
+      padding: 72px 40px;
+      text-align: center;
+      border-top: 1px solid rgba(255,255,255,0.08);
+      background: rgba(184,151,92,0.04);
     }
 
-    .leistungen-img-quote p {
+    .leistungen-cta-strip blockquote {
       font-family: var(--font-display);
       font-style: italic;
-      font-size: clamp(18px, 2vw, 24px);
-      color: var(--white);
-      line-height: 1.5;
-      opacity: 0.9;
+      font-size: clamp(22px, 3vw, 36px);
+      font-weight: 300;
+      line-height: 1.45;
+      color: rgba(255,255,255,0.7);
+      max-width: 700px;
+      margin: 0 auto 40px;
     }
 
-    .leistungen-img-quote span {
-      display: block;
-      margin-top: 12px;
-      font-size: 10px;
-      font-weight: 500;
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
+    .leistungen-cta-strip blockquote em {
       color: var(--gold-light);
+      font-style: italic;
     }
 
     /* ─── Testimonials ───────────────────────────────────────────────── */
@@ -1411,11 +1449,14 @@
       .gallery-item:first-child { grid-column: span 2; height: 220px; }
 
       /* ── Leistungen ───────────────────────────────────────────── */
-      .leistungen-body { grid-template-columns: 1fr; }
-      .leistungen-features { grid-template-columns: 1fr 1fr; }
-      .leistungen-feature { padding: 28px 20px; }
-      .leistungen-feature-title { font-size: 16px; }
-      .leistungen-img { min-height: 280px; order: -1; }
+      .leistungen-intro { grid-template-columns: 1fr; gap: 32px; padding: 52px 20px 48px; }
+      .leistungen-item { grid-template-columns: 1fr; min-height: auto; }
+      .leistungen-item--reverse .leistungen-item-content { order: 2; }
+      .leistungen-item--reverse .leistungen-item-visual { order: 1; }
+      .leistungen-item-visual { min-height: 260px; }
+      .leistungen-item-content { padding: 40px 20px; }
+      .leistungen-item-ghost { font-size: 100px; opacity: 0.03; left: 16px; }
+      .leistungen-cta-strip { padding: 52px 20px; }
 
       /* ── Testimonials ─────────────────────────────────────────── */
       .testimonials-grid { grid-template-columns: 1fr; }
@@ -1740,67 +1781,114 @@
   <!-- ─── Leistungen ────────────────────────────────────────────────────── -->
   <section class="leistungen" id="leistungen">
 
-    <div class="leistungen-header reveal">
-      <p class="label">Was Sie erwartet</p>
-      <div class="divider" style="background:var(--gold);"></div>
-      <h2>Alles für Ihren<br>vollkommenen Tag</h2>
+    <!-- Intro Header -->
+    <div class="leistungen-intro reveal">
+      <div class="leistungen-intro-left">
+        <p class="label">Was Sie erwartet</p>
+        <h2>Alles für Ihren<br><em>vollkommenen</em><br>Tag.</h2>
+      </div>
+      <div class="leistungen-intro-right">
+        <p>Wir begleiten Sie vom ersten Besichtigungstermin bis zum letzten Tanz. Jedes Detail wird mit Sorgfalt gestaltet — damit Ihr Tag so wird, wie Sie ihn sich erträumt haben.</p>
+        <a href="#anfrage" class="btn" style="color:var(--white);border-color:rgba(255,255,255,0.35);">Unverbindlich anfragen</a>
+      </div>
     </div>
 
-    <div class="leistungen-body reveal reveal-delay-1">
+    <!-- Editorial Items -->
+    <div class="leistungen-items">
 
-      <!-- Feature-Grid links -->
-      <div class="leistungen-features">
-
-        <div class="leistungen-feature">
-          <span class="leistungen-feature-num">01</span>
-          <div class="leistungen-feature-title">Exklusive Nutzung</div>
-          <div class="leistungen-feature-desc">Das gesamte Anwesen gehört an Ihrem Tag ausschließlich Ihnen — kein zweites Brautpaar, keine fremden Gäste.</div>
+      <!-- 01 -->
+      <div class="leistungen-item reveal">
+        <div class="leistungen-item-content">
+          <div class="leistungen-item-ghost">I</div>
+          <div class="leistungen-item-tag">
+            <span class="leistungen-item-num">01 / Exklusivität</span>
+            <div class="leistungen-item-line"></div>
+          </div>
+          <h3 class="leistungen-item-title">Nur für Sie.<br>Kein zweites Paar.</h3>
+          <p class="leistungen-item-desc">Das gesamte Anwesen gehört an Ihrem Hochzeitstag ausschließlich Ihnen und Ihren Gästen. Keine fremden Gäste, keine parallelen Veranstaltungen — nur Ihr unvergesslicher Moment.</p>
         </div>
-
-        <div class="leistungen-feature">
-          <span class="leistungen-feature-num">02</span>
-          <div class="leistungen-feature-title">Festsaal & Garten</div>
-          <div class="leistungen-feature-desc">Historischer Festsaal für bis zu 150 Personen, romantischer Schlossgarten für Sektempfang und Outdoor-Zeremonie.</div>
-        </div>
-
-        <div class="leistungen-feature">
-          <span class="leistungen-feature-num">03</span>
-          <div class="leistungen-feature-title">Standesamt im Schloss</div>
-          <div class="leistungen-feature-desc">Standesamtliche Trauung direkt auf dem Anwesen — der schönste Rahmen für Ihr Ja-Wort.</div>
-        </div>
-
-        <div class="leistungen-feature">
-          <span class="leistungen-feature-num">04</span>
-          <div class="leistungen-feature-title">Übernachtung</div>
-          <div class="leistungen-feature-desc">Schlossappartements für das Brautpaar und Gäste — erwachen Sie am Morgen danach im Herzen der Geschichte.</div>
-        </div>
-
-        <div class="leistungen-feature">
-          <span class="leistungen-feature-num">05</span>
-          <div class="leistungen-feature-title">Freie Dienstleister</div>
-          <div class="leistungen-feature-desc">Volle Freiheit bei Caterer, Musik und Dekoration. Wir koordinieren — Sie feiern.</div>
-        </div>
-
-        <div class="leistungen-feature leistungen-feature--cta">
-          <p>„Wir begleiten Sie vom ersten Besichtigungstermin bis zum letzten Tanz."</p>
-          <a href="#anfrage" class="btn" style="color:var(--white);border-color:rgba(255,255,255,0.35);align-self:flex-start;">
-            Unverbindlich anfragen
-          </a>
-        </div>
-
-      </div>
-
-      <!-- Bild rechts -->
-      <div class="leistungen-img">
-        <img src="./public/images/zimmer.jpg" alt="Schlossappartement">
-        <div class="leistungen-img-overlay"></div>
-        <div class="leistungen-img-quote">
-          <p>„Jeder Moment soll sich anfühlen wie der schönste Ihrer Hochzeit."</p>
-          <span>Schloss Burgpreppach</span>
+        <div class="leistungen-item-visual">
+          <img src="./public/images/schloss-facade.jpg" alt="Schloss Burgpreppach Fassade">
+          <div class="leistungen-item-visual-overlay"></div>
         </div>
       </div>
 
+      <!-- 02 -->
+      <div class="leistungen-item leistungen-item--reverse reveal">
+        <div class="leistungen-item-content">
+          <div class="leistungen-item-ghost">II</div>
+          <div class="leistungen-item-tag">
+            <span class="leistungen-item-num">02 / Festsaal & Garten</span>
+            <div class="leistungen-item-line"></div>
+          </div>
+          <h3 class="leistungen-item-title">Geschichte als<br>Kulisse.</h3>
+          <p class="leistungen-item-desc">Historischer Festsaal für bis zu 150 Personen, romantischer Schlossgarten für den Sektempfang — jeder Raum erzählt eine Geschichte, die zu Ihrer wird.</p>
+        </div>
+        <div class="leistungen-item-visual">
+          <img src="./public/images/saal-innen.jpg" alt="Festsaal Schloss Burgpreppach">
+          <div class="leistungen-item-visual-overlay"></div>
+        </div>
+      </div>
+
+      <!-- 03 -->
+      <div class="leistungen-item reveal">
+        <div class="leistungen-item-content">
+          <div class="leistungen-item-ghost">III</div>
+          <div class="leistungen-item-tag">
+            <span class="leistungen-item-num">03 / Standesamt</span>
+            <div class="leistungen-item-line"></div>
+          </div>
+          <h3 class="leistungen-item-title">Das Ja-Wort<br>im Schloss.</h3>
+          <p class="leistungen-item-desc">Standesamtliche Trauung direkt auf dem Anwesen — kein Ortswechsel, kein Stress. Nur Sie, Ihre Liebsten und der schönste Rahmen Unterfrankens.</p>
+        </div>
+        <div class="leistungen-item-visual">
+          <img src="./public/images/seitenansicht.jpg" alt="Schloss Burgpreppach">
+          <div class="leistungen-item-visual-overlay"></div>
+        </div>
+      </div>
+
+      <!-- 04 -->
+      <div class="leistungen-item leistungen-item--reverse reveal">
+        <div class="leistungen-item-content">
+          <div class="leistungen-item-ghost">IV</div>
+          <div class="leistungen-item-tag">
+            <span class="leistungen-item-num">04 / Übernachtung</span>
+            <div class="leistungen-item-line"></div>
+          </div>
+          <h3 class="leistungen-item-title">Erwachen als<br>verheiratetes Paar.</h3>
+          <p class="leistungen-item-desc">Exklusive Schlossappartements für Brautpaar und Gäste. Der erste Morgen als Eheleute — umgeben von Geschichte, Stille und Eleganz.</p>
+        </div>
+        <div class="leistungen-item-visual">
+          <img src="./public/images/zimmer.jpg" alt="Schlossappartement">
+          <div class="leistungen-item-visual-overlay"></div>
+        </div>
+      </div>
+
+      <!-- 05 -->
+      <div class="leistungen-item reveal">
+        <div class="leistungen-item-content">
+          <div class="leistungen-item-ghost">V</div>
+          <div class="leistungen-item-tag">
+            <span class="leistungen-item-num">05 / Freie Wahl</span>
+            <div class="leistungen-item-line"></div>
+          </div>
+          <h3 class="leistungen-item-title">Ihre Vision.<br>Unsere Bühne.</h3>
+          <p class="leistungen-item-desc">Volle Freiheit bei Caterer, Musik, Floristik und Dekoration. Bringen Sie Ihre Lieblingskünstler mit — wir koordinieren alles, damit Sie feiern können.</p>
+        </div>
+        <div class="leistungen-item-visual">
+          <img src="./public/images/garten.jpg" alt="Schlossgarten">
+          <div class="leistungen-item-visual-overlay"></div>
+        </div>
+      </div>
+
     </div>
+
+    <!-- CTA Strip -->
+    <div class="leistungen-cta-strip reveal">
+      <blockquote>„Jeder Moment soll sich anfühlen wie der <em>schönste Ihrer Hochzeit.</em>"</blockquote>
+      <a href="#anfrage" class="btn" style="color:var(--white);border-color:rgba(255,255,255,0.35);">Besichtigungstermin vereinbaren</a>
+    </div>
+
   </section>
 
   <!-- ─── Testimonials ──────────────────────────────────────────────────── -->
