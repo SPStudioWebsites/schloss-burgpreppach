@@ -1319,15 +1319,22 @@
       .schloss-inner { padding-inline: 20px; }
       .leistungen-inner { padding-inline: 20px; }
 
-      /* ── Intro stats ──────────────────────────────────────────── */
-      .intro-stats { flex-direction: column; align-items: center; }
+      /* ── Intro stats: 2×2 Grid ────────────────────────────────── */
+      .intro-stats {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        flex-direction: unset;
+        align-items: unset;
+      }
       .stat {
-        border-right: none;
-        border-bottom: 1px solid var(--border);
         max-width: 100%;
         width: 100%;
+        border-right: 1px solid var(--border);
+        border-bottom: 1px solid var(--border);
       }
-      .stat:last-child { border-bottom: none; }
+      .stat:nth-child(2n) { border-right: none; }
+      .stat:nth-child(3),
+      .stat:nth-child(4) { border-bottom: none; }
       .intro-quote { font-size: clamp(20px, 5.5vw, 30px); }
 
       /* ── Schloss ──────────────────────────────────────────────── */
